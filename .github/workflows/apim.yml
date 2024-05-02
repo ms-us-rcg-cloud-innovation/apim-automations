@@ -24,10 +24,20 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Setup PowerShell
+        run: |
+          # Install PowerShell on Ubuntu
+          sudo apt-get update
+          sudo apt-get install -y powershell
+
+      - name: Install Azure PowerShell module
+        run: |
+          pwsh -Command "Install-Module -Name Az -AllowClobber -Scope CurrentUser -Force"
+
       - name: Extract APIM Customizations
         run: |
-          pwsh -Command "./Export-APIMDeveloperPortal.ps1 -ExportFolder Export -AppId '${{ env.clientId }}' -Secret '${{ env.password }}' -Tenant '${{ env.tenant }}' -APIMName '${{ env.apimName }}' -ResourceGroupName '${{ env.resourceGroup }}'"
-          shell: pwsh
+          pwsh -Command "./Export-APIMDeveloperPortal.ps1 -ExportFolder 'Export' -AppId '${{ env.clientId }}' -Secret '${{ env.password }}' -Tenant '${{ env.tenant }}' -APIMName '${{ env.apimName }}' -ResourceGroupName '${{ env.resourceGroup }}'"
+        shell: pwsh
 
       - name: Configure Git
         run: |
