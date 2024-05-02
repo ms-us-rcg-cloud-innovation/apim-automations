@@ -1,4 +1,4 @@
-name: Extract and Commit Customizations
+name: Extract and Commit Customizations 
 
 env:
   clientId: ${{ secrets.APIMAUTOMATIONIDENTITYCLIENTID }}
