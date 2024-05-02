@@ -20,7 +20,7 @@ This script is used to extract the Azure API Management Developer Portal content
 This script is used to publish the Azure API Management Developer Portal content. It takes several parameters including the resource group name, API Management name, and import folder. The content to be published should be in the specified import folder. You can find this script in the [developerPortalScripts](../developerPortalScripts/) directory.
 
 ## Getting Started
-To get started with this project, you'll need to have PowerShell installed. You can then run the PowerShell scripts from your local machine. For the GitHub workflows, you'll need to have a GitHub account and a repository where you can add these workflows.
+To get started with this project locally, you'll need to have PowerShell installed. You can then run the PowerShell scripts from your machine. For the GitHub workflows, you'll need to have a GitHub account and a repository where you can add these workflows.
 
 ## Contributing
 Contributions are welcome! Please read our contributing guidelines before getting started.
