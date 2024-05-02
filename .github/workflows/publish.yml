@@ -1,0 +1,35 @@
+name: Publish APIM Developer Portal Content
+
+on:
+  push:
+    branches:
+      - 'feature/*'  # Adjust the branch pattern as necessary
+
+jobs:
+  import_apim_content:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Copy Export to Publish
+        run: |
+          mkdir -p Publish
+          cp -r Export/* Publish/
+        shell: bash
+
+      - name: Setup PowerShell
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y powershell
+
+      - name: Install Azure PowerShell module
+        run: |
+          pwsh -Command "Install-Module -Name Az -AllowClobber -Scope CurrentUser -Force"
+
+      - name: Execute Import PowerShell Script
+        run: |
+          pwsh -Command "./Import-APIMDeveloperPortal.ps1 -ResourceGroupName '${{ secrets.RESOURCEGROUPNAMEDEV }}' -APIMName '${{ secrets.APIMNAMEDEV }}' -ImportFolder './Publish' -AppId '${{ secrets.CLIENTID }}' -Secret '${{ secrets.CLIENTSECRET }}' -Tenant '${{ secrets.TENANTID }}'"
+        shell: pwsh
