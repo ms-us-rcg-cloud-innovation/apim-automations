@@ -27,7 +27,7 @@ jobs:
 
       - name: Copy Extract to Publish
         run: |
-          mkdir -p Publish
+          mkdir -p developerPortalScripts/Publish/
           cp -r developerPortalScripts/Extract/* developerPortalScripts/Publish/
         shell: bash
 
