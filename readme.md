@@ -4,7 +4,7 @@ This project includes scripts and workflows for extracting and publishing Azure 
 
 ## Developer Portal Customization Flows
 
-### Extract Workflow
+### APIM Developer Portal CICD
 [APIM Developer Portal CICD](developerPortalScripts/readme.md)
 
 ## Contributing
