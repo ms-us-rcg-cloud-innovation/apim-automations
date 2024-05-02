@@ -63,10 +63,7 @@ jobs:
           if ($status -ne "") {
             echo "Changes detected, preparing to push..."
             # Only set the authorization header once, immediately before pushing
-            git config --global http.https://github.com/.extraheader "AUTHORIZATION: bearer ${{ secrets.GITHUB_TOKEN }}"
             git push origin ${{ steps.branch.outputs.branch_name }}
-            # Clear the extraheader after use to prevent duplication in future commands
-            git config --global --unset http.https://github.com/.extraheader
           } else {
             echo "No changes to commit."
           }
