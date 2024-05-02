@@ -60,9 +60,11 @@ jobs:
         run: |
           git add .
           git commit -m "Extracted APIM customizations"
-          if [ "$(git status --porcelain)" != "" ]; then
+          $status = git status --porcelain
+          if ($status -ne "") {
             git push origin ${{ steps.branch.outputs.branch_name }}
-          else
+          } else {
             echo "No changes to commit."
-          fi
+          }
         shell: pwsh
+
