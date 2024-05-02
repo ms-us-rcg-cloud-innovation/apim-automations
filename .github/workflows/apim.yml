@@ -26,8 +26,7 @@ jobs:
 
       - name: Extract APIM Customizations
         run: |
-          pwsh -Command "./Export-APIMDeveloperPortal.ps1 -ClientId '${{ env.clientId }}' -ClientSecret '${{ env.password }}' -TenantId '${{ env.tenant }}' -ApimName '${{ env.apimName }}' -ResourceGroup '${{ env.resourceGroup }}'"
-        shell: pwsh
+          pwsh -Command "./Export-APIMDeveloperPortal.ps1 -ExportFolder Export -AppId '${{ env.clientId }}' -Secret '${{ env.password }}' -Tenant '${{ env.tenant }}' -APIMName '${{ env.apimName }}' -ResourceGroupName '${{ env.resourceGroup }}'"        shell: pwsh
 
       - name: Configure Git
         run: |
