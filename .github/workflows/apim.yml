@@ -20,7 +20,7 @@ jobs:
       - name: Extract APIM Customizations
         run: |
           # Add your PowerShell script path here to extract customizations
-          ./path_to_extraction_script.ps1
+          ./Export-APIMDeveloperPortal.ps1
         shell: pwsh
 
       - name: Configure Git
