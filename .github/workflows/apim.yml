@@ -26,7 +26,6 @@ jobs:
 
       - name: Setup PowerShell
         run: |
-          # Install PowerShell on Ubuntu
           sudo apt-get update
           sudo apt-get install -y powershell
 
@@ -56,18 +55,19 @@ jobs:
           git fetch
           git checkout -b ${{ steps.branch.outputs.branch_name }}
 
-      - name: Commit changes
+      - name: Commit and Push Changes
         run: |
           git add .
           git commit -m "Extracted APIM customizations"
           $status = git status --porcelain
           if ($status -ne "") {
             echo "Changes detected, preparing to push..."
-            # Set up the Git authentication using GITHUB_TOKEN before pushing
-            git config --global http.https://github.com/.extraheader "AUTHORIZATION: bearer ${{ secrets.PAT }}"
+            # Only set the authorization header once, immediately before pushing
+            git config --global http.https://github.com/.extraheader "AUTHORIZATION: bearer ${{ secrets.GITHUB_TOKEN }}"
             git push origin ${{ steps.branch.outputs.branch_name }}
+            # Clear the extraheader after use to prevent duplication in future commands
+            git config --global --unset http.https://github.com/.extraheader
           } else {
             echo "No changes to commit."
           }
         shell: pwsh
-
