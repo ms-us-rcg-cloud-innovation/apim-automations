@@ -64,7 +64,7 @@ jobs:
           if ($status -ne "") {
             echo "Changes detected, preparing to push..."
             # Set up the Git authentication using GITHUB_TOKEN before pushing
-            git config --global http.https://github.com/.extraheader "AUTHORIZATION: bearer ${{ secrets.GITHUB_TOKEN }}"
+            git config --global http.https://github.com/.extraheader "AUTHORIZATION: bearer ${{ secrets.PAT }}"
             git push origin ${{ steps.branch.outputs.branch_name }}
           } else {
             echo "No changes to commit."
