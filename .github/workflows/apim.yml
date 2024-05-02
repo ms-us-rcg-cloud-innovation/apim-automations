@@ -1,0 +1,40 @@
+name: Extract and Commit Customizations
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch_name:
+        description: 'Branch name to commit changes'
+        required: true
+        default: 'feature/update-${{ github.run_number }}'
+
+jobs:
+  extract_and_commit:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Extract APIM Customizations
+        run: |
+          # Add your PowerShell script path here to extract customizations
+          ./path_to_extraction_script.ps1
+        shell: pwsh
+
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+      - name: Create New Branch
+        run: git checkout -b ${{ github.event.inputs.branch_name }}
+
+      - name: Commit changes
+        run: |
+          git add .
+          git commit -m "Extracted APIM customizations"
+          git push origin ${{ github.event.inputs.branch_name }}
+        shell: pwsh
+
