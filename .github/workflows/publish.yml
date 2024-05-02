@@ -3,7 +3,7 @@ name: Publish APIM Developer Portal Content
 on:
   push:
     branches:
-      - '*'  # This should trigger the workflow when any branch matching the pattern is pushed.
+      - 'main'  # This should trigger the workflow when any branch matching the pattern is pushed.
 
 jobs:
   import_apim_content:
@@ -33,5 +33,5 @@ jobs:
 
       - name: Execute Import PowerShell Script
         run: |
-          pwsh -Command "./publishDeveloperPortal.ps1 -ResourceGroupName '${{ secrets.RESOURCEGROUPNAMEPROD }}' -APIMName '${{ secrets.APIMNAMEPROD }}' -ImportFolder './Publish' -AppId '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTID }}' -Secret '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTSECRET }}' -Tenant '${{ secrets.APIMAUTOMATIONIDENTITYTENANTID }}'"
+          pwsh -Command "./developerPortalScripts/publishDeveloperPortal.ps1 -ResourceGroupName '${{ secrets.RESOURCEGROUPNAMEPROD }}' -APIMName '${{ secrets.APIMNAMEPROD }}' -ImportFolder './Publish' -AppId '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTID }}' -Secret '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTSECRET }}' -Tenant '${{ secrets.APIMAUTOMATIONIDENTITYTENANTID }}'"
         shell: pwsh
