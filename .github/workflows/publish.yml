@@ -28,10 +28,10 @@ jobs:
       - name: Copy Extract to Publish
         run: |
           mkdir -p Publish
-          cp -r Extract/* Publish/
+          cp -r developerPortalScripts/Extract/* developerPortalScripts/Publish/
         shell: bash
 
       - name: Execute Import PowerShell Script
         run: |
-          pwsh -Command "./developerPortalScripts/publishDeveloperPortal.ps1 -ResourceGroupName '${{ secrets.RESOURCEGROUPNAMEPROD }}' -APIMName '${{ secrets.APIMNAMEPROD }}' -ImportFolder './Publish' -AppId '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTID }}' -Secret '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTSECRET }}' -Tenant '${{ secrets.APIMAUTOMATIONIDENTITYTENANTID }}'"
+          pwsh -Command "./developerPortalScripts/publishDeveloperPortal.ps1 -ResourceGroupName '${{ secrets.RESOURCEGROUPNAMEPROD }}' -APIMName '${{ secrets.APIMNAMEPROD }}' -ImportFolder './developerPortalScripts/Publish' -AppId '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTID }}' -Secret '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTSECRET }}' -Tenant '${{ secrets.APIMAUTOMATIONIDENTITYTENANTID }}'"
         shell: pwsh

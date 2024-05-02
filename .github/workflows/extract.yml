@@ -28,7 +28,7 @@ jobs:
 
       - name: Extract APIM Customizations
         run: |
-          pwsh -Command "./developerPortalScripts/extractDeveloperPortal.ps1 -ExportFolder 'Extract' -AppId '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTID }}' -Secret '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTSECRET }}' -Tenant '${{ secrets.APIMAUTOMATIONIDENTITYTENANTID }}' -APIMName '${{ secrets.APIMNAMEDEV }}' -ResourceGroupName '${{ secrets.RESOURCEGROUPNAMEDEV }}'"
+          pwsh -Command "./developerPortalScripts/extractDeveloperPortal.ps1 -ExportFolder 'developerPortalScripts/Extract' -AppId '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTID }}' -Secret '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTSECRET }}' -Tenant '${{ secrets.APIMAUTOMATIONIDENTITYTENANTID }}' -APIMName '${{ secrets.APIMNAMEDEV }}' -ResourceGroupName '${{ secrets.RESOURCEGROUPNAMEDEV }}'"
         shell: pwsh
 
       - name: Configure Git
