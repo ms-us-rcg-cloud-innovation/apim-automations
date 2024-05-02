@@ -3,7 +3,7 @@ name: Publish APIM Developer Portal Content
 on:
   push:
     branches:
-      - 'feature/*'  # This should trigger the workflow when any branch matching the pattern is pushed.
+      - '*'  # This should trigger the workflow when any branch matching the pattern is pushed.
 
 jobs:
   import_apim_content:
