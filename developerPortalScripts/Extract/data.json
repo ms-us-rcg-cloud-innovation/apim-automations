@@ -1,28 +1,102 @@
 {
-  "/contentTypes/page/contentItems/81b0cd55-fb1a-12ee-e41a-d2d6b851ac60": {
-    "id": "/contentTypes/page/contentItems/81b0cd55-fb1a-12ee-e41a-d2d6b851ac60",
+  "/contentTypes/document/contentItems/navigation": {
+    "id": "/contentTypes/document/contentItems/navigation",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "81b0cd55-fb1a-12ee-e41a-d2d6b851ac60",
+    "name": "navigation",
     "properties": {
-      "en_us": {
-        "title": "Sign in",
-        "description": "",
-        "keywords": "",
-        "documentId": "contentTypes/document/contentItems/81b0cd55-fb1a-12ee-e41a-d2d6b851ac60",
-        "permalink": "/signin"
-      }
+      "nodes": [
+        {
+          "id": "main",
+          "label": "Main menu",
+          "navigationItems": [
+            {
+              "id": "0901ccd9-9c01-8a2b-5d86-7edd429f3a9a",
+              "label": "Home",
+              "targetId": "contentTypes/page/contentItems/e0987ca1-f458-b546-7697-7be594b35583",
+              "navigationItems": null
+            },
+            {
+              "id": "32fea618-15ed-f8ab-e3fa-ec71a144632f",
+              "label": "APIs",
+              "targetId": "contentTypes/page/contentItems/38b4a583-e611-dbf8-b945-a2d591c61614",
+              "navigationItems": null
+            },
+            {
+              "id": "775bc451-92f1-8463-f06c-0251fc529bd9",
+              "label": "Products",
+              "targetId": "contentTypes/page/contentItems/9862f795-6e36-217e-6dc7-cf7226591267",
+              "navigationItems": null
+            }
+          ]
+        },
+        {
+          "id": "ed7c0fc2-6fa3-2efd-4ec9-0d8feb484a12",
+          "label": "Authenticated user menu",
+          "navigationItems": [
+            {
+              "id": "bb3147e0-0123-0471-2754-79bd90622f46",
+              "label": "Reports",
+              "targetId": "contentTypes/page/contentItems/89bb02ae-194e-828f-d595-df5675f5e6d1",
+              "navigationItems": null
+            },
+            {
+              "id": "c4bc59d2-e97d-d5d3-bfa0-d3f667310f35",
+              "label": "Profile",
+              "targetId": "contentTypes/page/contentItems/4e3cf6a5-574a-ba08-1f23-2e7a38faa6d8",
+              "navigationItems": null
+            },
+            {
+              "id": "ef72a776-6915-42c4-ade1-5385fd8404b7",
+              "label": "Sign out",
+              "targetId": "contentTypes/url/contentItems/1bec2534-46c4-7555-f8ec-ffcd9645fc2e",
+              "navigationItems": null
+            }
+          ]
+        },
+        {
+          "id": "74ed66aa-1cc0-f91a-60c6-6e1b2aa239ea",
+          "label": "Anonymous user menu",
+          "navigationItems": [
+            {
+              "id": "754349ff-01fd-2e38-c883-145f47fa8f34",
+              "label": "Sign in",
+              "targetId": "contentTypes/page/contentItems/81b0cd55-fb1a-12ee-e41a-d2d6b851ac60",
+              "navigationItems": null
+            },
+            {
+              "id": "d1f8a15c-2946-b504-cee1-4f29d5300082",
+              "label": "Sign up",
+              "targetId": "contentTypes/page/contentItems/0145411a-2c82-325a-4390-76cff184530b",
+              "navigationItems": null
+            }
+          ]
+        },
+        {
+          "id": "e4c00a1d-13ee-c080-8583-bfd496298f33",
+          "label": "Home page - sign up",
+          "navigationItems": [
+            {
+              "id": "d973fd56-14ae-61d5-6d34-bdd4344890f6",
+              "label": "Sign up",
+              "targetId": "contentTypes/page/contentItems/0145411a-2c82-325a-4390-76cff184530b",
+              "navigationItems": null
+            }
+          ]
+        }
+      ]
     }
   },
-  "/contentTypes/layout/contentItems/default-page-layout": {
-    "id": "/contentTypes/layout/contentItems/default-page-layout",
+  "/contentTypes/page/contentItems/f95c292b-b40b-e2cd-b5dc-71fffc97083d": {
+    "id": "/contentTypes/page/contentItems/f95c292b-b40b-e2cd-b5dc-71fffc97083d",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "default-page-layout",
+    "name": "f95c292b-b40b-e2cd-b5dc-71fffc97083d",
     "properties": {
       "en_us": {
-        "title": "Default",
+        "title": "Errors: 404 Page not found",
         "description": "",
-        "documentId": "contentTypes/document/contentItems/default-page-layout",
-        "permalinkTemplate": "/*"
+        "keywords": "",
+        "documentId": "contentTypes/document/contentItems/f95c292b-b40b-e2cd-b5dc-71fffc97083d",
+        "permalink": "/404"
       }
     }
   },
@@ -40,42 +114,417 @@
       "mimeType": "image/jpeg"
     }
   },
-  "/contentTypes/url/contentItems/db6d0be2-ec1a-2850-6476-ff53b65b00b9": {
-    "id": "/contentTypes/url/contentItems/db6d0be2-ec1a-2850-6476-ff53b65b00b9",
+  "/contentTypes/document/contentItems/bc0b16ea-592d-c4c2-e5b6-ccef526cf42a": {
+    "id": "/contentTypes/document/contentItems/bc0b16ea-592d-c4c2-e5b6-ccef526cf42a",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "db6d0be2-ec1a-2850-6476-ff53b65b00b9",
+    "name": "bc0b16ea-592d-c4c2-e5b6-ccef526cf42a",
     "properties": {
-      "title": "APIs",
-      "description": "",
-      "permalink": "/apis"
+      "nodes": [
+        {
+          "type": "layout-section",
+          "nodes": [
+            {
+              "type": "grid",
+              "nodes": [
+                {
+                  "type": "grid-cell",
+                  "nodes": [
+                    {
+                      "type": "text-block",
+                      "nodes": [
+                        {
+                          "type": "heading1",
+                          "attrs": {
+                            "id": "S6i3i"
+                          },
+                          "nodes": [
+                            {
+                              "type": "text",
+                              "text": "Reset password"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "validationSummary"
+                    },
+                    {
+                      "type": "confirmPassword"
+                    }
+                  ],
+                  "role": "article",
+                  "styles": {
+                    "instance": {
+                      "grid-cell": {
+                        "xs": {
+                          "position": {
+                            "col": 1,
+                            "row": 1
+                          },
+                          "span": {
+                            "cols": 1,
+                            "rows": 1
+                          },
+                          "alignment": {
+                            "vertical": "center",
+                            "horizontal": "center"
+                          }
+                        }
+                      },
+                      "id": "myaxhjsvdw",
+                      "padding": {
+                        "xs": {
+                          "top": 5,
+                          "left": 5,
+                          "right": 5,
+                          "bottom": 5
+                        },
+                        "md": {
+                          "top": 15,
+                          "left": 15,
+                          "right": 15,
+                          "bottom": 15
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "styles": {
+                "instance": {
+                  "grid": {
+                    "xs": {
+                      "rows": [
+                        "auto"
+                      ],
+                      "cols": [
+                        "1fr"
+                      ]
+                    }
+                  },
+                  "id": "cmwjhkfdnp",
+                  "size": {
+                    "sm": {
+                      "maxWidth": 540
+                    },
+                    "md": {
+                      "maxWidth": 720
+                    },
+                    "lg": {
+                      "maxWidth": 960
+                    },
+                    "xl": {
+                      "maxWidth": 1140
+                    }
+                  },
+                  "margin": {
+                    "xs": {
+                      "top": 10,
+                      "left": "auto",
+                      "right": "auto",
+                      "bottom": 10
+                    },
+                    "md": {
+                      "top": 15,
+                      "bottom": 15
+                    },
+                    "xl": {
+                      "top": 25,
+                      "bottom": 25
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
     }
   },
-  "/contentTypes/page/contentItems/0145411a-2c82-325a-4390-76cff184530b": {
-    "id": "/contentTypes/page/contentItems/0145411a-2c82-325a-4390-76cff184530b",
+  "/contentTypes/document/contentItems/933ce351-2259-d7b7-3f4f-5c33f3ad328a": {
+    "id": "/contentTypes/document/contentItems/933ce351-2259-d7b7-3f4f-5c33f3ad328a",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "0145411a-2c82-325a-4390-76cff184530b",
+    "name": "933ce351-2259-d7b7-3f4f-5c33f3ad328a",
+    "properties": {
+      "nodes": [
+        {
+          "type": "layout-section",
+          "nodes": [
+            {
+              "type": "grid",
+              "nodes": [
+                {
+                  "type": "grid-cell",
+                  "nodes": [
+                    {
+                      "type": "text-block",
+                      "nodes": [
+                        {
+                          "type": "heading1",
+                          "attrs": {
+                            "id": "GvmaU"
+                          },
+                          "nodes": [
+                            {
+                              "type": "text",
+                              "text": "API changelog"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "historyOfApi",
+                      "detailsPageHyperlink": {
+                        "target": "_self",
+                        "targetId": "contentTypes/page/contentItems/1b2a9e4c-d53b-99d1-e363-348630d982b5"
+                      }
+                    }
+                  ],
+                  "role": "article",
+                  "styles": {
+                    "instance": {
+                      "grid-cell": {
+                        "xs": {
+                          "position": {
+                            "col": 1,
+                            "row": 1
+                          },
+                          "span": {
+                            "cols": 1,
+                            "rows": 1
+                          },
+                          "alignment": {
+                            "vertical": "center",
+                            "horizontal": "center"
+                          }
+                        },
+                        "xl": {
+                          "alignment": {
+                            "vertical": "start",
+                            "horizontal": "start"
+                          }
+                        }
+                      },
+                      "id": "myaxhjsvdw",
+                      "padding": {
+                        "xs": {
+                          "top": 5,
+                          "left": 5,
+                          "right": 5,
+                          "bottom": 5
+                        },
+                        "md": {
+                          "top": 15,
+                          "left": 15,
+                          "right": 15,
+                          "bottom": 15
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "styles": {
+                "instance": {
+                  "grid": {
+                    "xs": {
+                      "rows": [
+                        "auto"
+                      ],
+                      "cols": [
+                        "1fr"
+                      ]
+                    }
+                  },
+                  "id": "cmwjhkfdnp",
+                  "size": {
+                    "sm": {
+                      "maxWidth": 540
+                    },
+                    "md": {
+                      "maxWidth": 720
+                    },
+                    "lg": {
+                      "maxWidth": 960
+                    },
+                    "xl": {
+                      "maxWidth": 1140
+                    }
+                  },
+                  "margin": {
+                    "xs": {
+                      "top": 10,
+                      "left": "auto",
+                      "right": "auto",
+                      "bottom": 10
+                    },
+                    "md": {
+                      "top": 15,
+                      "bottom": 15
+                    },
+                    "xl": {
+                      "top": 25,
+                      "bottom": 25
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/contentTypes/page/contentItems/89bb02ae-194e-828f-d595-df5675f5e6d1": {
+    "id": "/contentTypes/page/contentItems/89bb02ae-194e-828f-d595-df5675f5e6d1",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "89bb02ae-194e-828f-d595-df5675f5e6d1",
     "properties": {
       "en_us": {
-        "title": "Sign up",
+        "title": "User: Reports",
         "description": "",
         "keywords": "",
-        "documentId": "contentTypes/document/contentItems/0145411a-2c82-325a-4390-76cff184530b",
-        "permalink": "/signup"
+        "documentId": "contentTypes/document/contentItems/89bb02ae-194e-828f-d595-df5675f5e6d1",
+        "permalink": "/reports"
       }
     }
   },
-  "/contentTypes/blob/contentItems/a2514081-47cb-95b1-ef0b-aef128c7a7ed": {
-    "id": "/contentTypes/blob/contentItems/a2514081-47cb-95b1-ef0b-aef128c7a7ed",
+  "/contentTypes/document/contentItems/f95c292b-b40b-e2cd-b5dc-71fffc97083d": {
+    "id": "/contentTypes/document/contentItems/f95c292b-b40b-e2cd-b5dc-71fffc97083d",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "a2514081-47cb-95b1-ef0b-aef128c7a7ed",
+    "name": "f95c292b-b40b-e2cd-b5dc-71fffc97083d",
     "properties": {
-      "blobId": "",
-      "fileName": "featured-2.jpg",
+      "nodes": [
+        {
+          "type": "layout-section",
+          "styles": null,
+          "nodes": [
+            {
+              "type": "grid",
+              "nodes": [
+                {
+                  "type": "grid-cell",
+                  "nodes": [
+                    {
+                      "type": "text-block",
+                      "nodes": [
+                        {
+                          "type": "heading1",
+                          "attrs": {
+                            "id": "nGEr2"
+                          },
+                          "nodes": [
+                            {
+                              "type": "text",
+                              "text": "Page you're looking for doesn't exist"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "role": "article",
+                  "styles": {
+                    "instance": {
+                      "grid-cell": {
+                        "xs": {
+                          "position": {
+                            "col": 1,
+                            "row": 1
+                          },
+                          "span": {
+                            "cols": 1,
+                            "rows": 1
+                          },
+                          "alignment": {
+                            "vertical": "center",
+                            "horizontal": "center"
+                          }
+                        }
+                      },
+                      "id": "myaxhjsvdw",
+                      "padding": {
+                        "xs": {
+                          "top": 5,
+                          "left": 5,
+                          "right": 5,
+                          "bottom": 5
+                        },
+                        "md": {
+                          "top": 15,
+                          "left": 15,
+                          "right": 15,
+                          "bottom": 15
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "styles": {
+                "instance": {
+                  "grid": {
+                    "xs": {
+                      "rows": [
+                        "auto"
+                      ],
+                      "cols": [
+                        "1fr"
+                      ]
+                    }
+                  },
+                  "id": "cmwjhkfdnp",
+                  "size": {
+                    "sm": {
+                      "maxWidth": 540
+                    },
+                    "md": {
+                      "maxWidth": 720
+                    },
+                    "lg": {
+                      "maxWidth": 960
+                    },
+                    "xl": {
+                      "maxWidth": 1140
+                    }
+                  },
+                  "margin": {
+                    "xs": {
+                      "top": 10,
+                      "left": "auto",
+                      "right": "auto",
+                      "bottom": 10
+                    },
+                    "md": {
+                      "top": 15,
+                      "bottom": 15
+                    },
+                    "xl": {
+                      "top": 25,
+                      "bottom": 25
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/contentTypes/blob/contentItems/c99bb6be-092e-23cb-5579-6d3331ac42ea": {
+    "id": "/contentTypes/blob/contentItems/c99bb6be-092e-23cb-5579-6d3331ac42ea",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "c99bb6be-092e-23cb-5579-6d3331ac42ea",
+    "properties": {
+      "fileName": "OpenAI Patterns - Page 1 (1).png",
+      "blobId": "c99bb6be-092e-23cb-5579-6d3331ac42ea",
       "description": "",
       "keywords": "",
-      "downloadUrl": "https://apimdeveloperportal.blob.core.windows.net/content/a2514081-47cb-95b1-ef0b-aef128c7a7ed",
-      "permalink": "/content/featured-2.jpg",
-      "mimeType": "image/jpeg"
+      "permalink": "/content/OpenAI Patterns - Page 1 (1).png",
+      "mimeType": "image/png"
     }
   },
   "/contentTypes/document/contentItems/stylesheet": {
@@ -1696,46 +2145,18 @@
       ]
     }
   },
-  "/contentTypes/blob/contentItems/09879768-b2c8-afbd-a945-934c046b3c2d": {
-    "id": "/contentTypes/blob/contentItems/09879768-b2c8-afbd-a945-934c046b3c2d",
+  "/contentTypes/page/contentItems/0145411a-2c82-325a-4390-76cff184530b": {
+    "id": "/contentTypes/page/contentItems/0145411a-2c82-325a-4390-76cff184530b",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "09879768-b2c8-afbd-a945-934c046b3c2d",
-    "properties": {
-      "blobId": "",
-      "fileName": "hero-gradient.jpg",
-      "description": "",
-      "keywords": "",
-      "downloadUrl": "https://apimdeveloperportal.blob.core.windows.net/content/09879768-b2c8-afbd-a945-934c046b3c2d",
-      "permalink": "/content/hero-gradient.jpg",
-      "mimeType": "image/jpeg"
-    }
-  },
-  "/contentTypes/page/contentItems/89bb02ae-194e-828f-d595-df5675f5e6d1": {
-    "id": "/contentTypes/page/contentItems/89bb02ae-194e-828f-d595-df5675f5e6d1",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "89bb02ae-194e-828f-d595-df5675f5e6d1",
+    "name": "0145411a-2c82-325a-4390-76cff184530b",
     "properties": {
       "en_us": {
-        "title": "User: Reports",
+        "title": "Sign up",
         "description": "",
         "keywords": "",
-        "documentId": "contentTypes/document/contentItems/89bb02ae-194e-828f-d595-df5675f5e6d1",
-        "permalink": "/reports"
+        "documentId": "contentTypes/document/contentItems/0145411a-2c82-325a-4390-76cff184530b",
+        "permalink": "/signup"
       }
-    }
-  },
-  "/contentTypes/blob/contentItems/70add409-0933-e01e-acef-99999a71167e": {
-    "id": "/contentTypes/blob/contentItems/70add409-0933-e01e-acef-99999a71167e",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "70add409-0933-e01e-acef-99999a71167e",
-    "properties": {
-      "blobId": "",
-      "fileName": "logo-contoso-small.png",
-      "description": "",
-      "keywords": "",
-      "downloadUrl": "https://apimdeveloperportal.blob.core.windows.net/content/70add409-0933-e01e-acef-99999a71167e",
-      "permalink": "/content/logo-contoso-small.png",
-      "mimeType": "image/png"
     }
   },
   "/contentTypes/page/contentItems/0fa17e1c-6497-f6a9-cf19-02b02b59bbf0": {
@@ -1752,1049 +2173,158 @@
       }
     }
   },
-  "/contentTypes/url/contentItems/a213a574-5acb-8520-26b3-27af16d7f9bc": {
-    "id": "/contentTypes/url/contentItems/a213a574-5acb-8520-26b3-27af16d7f9bc",
+  "/contentTypes/document/contentItems/main-menu-popup": {
+    "id": "/contentTypes/document/contentItems/main-menu-popup",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "a213a574-5acb-8520-26b3-27af16d7f9bc",
+    "name": "main-menu-popup",
     "properties": {
-      "title": "https://azure.microsoft.com/services/api-management/",
-      "description": "",
-      "permalink": "https://azure.microsoft.com/services/api-management/"
-    }
-  },
-  "/contentTypes/document/contentItems/new-page-template": {
-    "id": "/contentTypes/document/contentItems/new-page-template",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "new-page-template",
-    "properties": {
-      "nodes": [
-        {
-          "type": "layout-section",
-          "nodes": [
-            {
-              "type": "grid",
-              "nodes": [
-                {
-                  "type": "grid-cell",
-                  "nodes": [
-                    {
-                      "type": "text-block",
-                      "nodes": [
-                        {
-                          "type": "heading1",
-                          "nodes": [
-                            {
-                              "type": "text",
-                              "text": "Heading 1"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "paragraph",
-                          "nodes": [
-                            {
-                              "type": "text",
-                              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "role": "article",
-                  "styles": {
-                    "instance": {
-                      "grid-cell": {
-                        "xs": {
-                          "position": {
-                            "col": 1,
-                            "row": 1
-                          },
-                          "span": {
-                            "cols": 1,
-                            "rows": 1
-                          },
-                          "alignment": {
-                            "vertical": "center",
-                            "horizontal": "center"
-                          }
-                        }
-                      },
-                      "id": "myaxhjsvdw",
-                      "padding": {
-                        "xs": {
-                          "top": 5,
-                          "left": 5,
-                          "right": 5,
-                          "bottom": 5
-                        },
-                        "md": {
-                          "top": 15,
-                          "left": 15,
-                          "right": 15,
-                          "bottom": 15
-                        }
-                      }
-                    }
-                  }
-                }
-              ],
-              "styles": {
-                "instance": {
-                  "grid": {
-                    "xs": {
-                      "rows": [
-                        "auto"
-                      ],
-                      "cols": [
-                        "1fr"
-                      ]
-                    }
-                  },
-                  "id": "cmwjhkfdnp",
-                  "size": {
-                    "sm": {
-                      "maxWidth": 540
-                    },
-                    "md": {
-                      "maxWidth": 720
-                    },
-                    "lg": {
-                      "maxWidth": 960
-                    },
-                    "xl": {
-                      "maxWidth": 1140
-                    }
-                  },
-                  "margin": {
-                    "xs": {
-                      "top": 10,
-                      "left": "auto",
-                      "right": "auto",
-                      "bottom": 10
-                    },
-                    "md": {
-                      "top": 15,
-                      "bottom": 15
-                    },
-                    "xl": {
-                      "top": 25,
-                      "bottom": 25
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "/contentTypes/page/contentItems/9862f795-6e36-217e-6dc7-cf7226591267": {
-    "id": "/contentTypes/page/contentItems/9862f795-6e36-217e-6dc7-cf7226591267",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "9862f795-6e36-217e-6dc7-cf7226591267",
-    "properties": {
-      "en_us": {
-        "title": "Products: List",
-        "description": "",
-        "keywords": "",
-        "documentId": "contentTypes/document/contentItems/9862f795-6e36-217e-6dc7-cf7226591267",
-        "permalink": "/products"
-      }
-    }
-  },
-  "/contentTypes/page/contentItems/3bc2e097-114e-cd8d-dc51-4139bcbdb8c0": {
-    "id": "/contentTypes/page/contentItems/3bc2e097-114e-cd8d-dc51-4139bcbdb8c0",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "3bc2e097-114e-cd8d-dc51-4139bcbdb8c0",
-    "properties": {
-      "en_us": {
-        "title": "Errors: 500 Internal error",
-        "description": "",
-        "keywords": "",
-        "documentId": "contentTypes/document/contentItems/3bc2e097-114e-cd8d-dc51-4139bcbdb8c0",
-        "permalink": "/500"
-      }
-    }
-  },
-  "/contentTypes/url/contentItems/e4a52924-c46c-8797-b4d2-025e1f41896a": {
-    "id": "/contentTypes/url/contentItems/e4a52924-c46c-8797-b4d2-025e1f41896a",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "e4a52924-c46c-8797-b4d2-025e1f41896a",
-    "properties": {
-      "title": "https://aka.ms/apimrocks",
-      "permalink": "https://aka.ms/apimrocks"
-    }
-  },
-  "/contentTypes/page/contentItems/4e3cf6a5-574a-ba08-1f23-2e7a38faa6d8": {
-    "id": "/contentTypes/page/contentItems/4e3cf6a5-574a-ba08-1f23-2e7a38faa6d8",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "4e3cf6a5-574a-ba08-1f23-2e7a38faa6d8",
-    "properties": {
-      "en_us": {
-        "title": "User: Profile",
-        "description": "",
-        "keywords": "",
-        "documentId": "contentTypes/document/contentItems/4e3cf6a5-574a-ba08-1f23-2e7a38faa6d8",
-        "permalink": "/profile"
-      }
-    }
-  },
-  "/contentTypes/document/contentItems/3bc2e097-114e-cd8d-dc51-4139bcbdb8c0": {
-    "id": "/contentTypes/document/contentItems/3bc2e097-114e-cd8d-dc51-4139bcbdb8c0",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "3bc2e097-114e-cd8d-dc51-4139bcbdb8c0",
-    "properties": {
-      "nodes": [
-        {
-          "type": "layout-section",
-          "nodes": [
-            {
-              "type": "grid",
-              "nodes": [
-                {
-                  "type": "grid-cell",
-                  "nodes": [
-                    {
-                      "type": "text-block",
-                      "nodes": [
-                        {
-                          "type": "heading1",
-                          "attrs": {
-                            "id": "UKXkJ"
-                          },
-                          "nodes": [
-                            {
-                              "type": "text",
-                              "text": "Oops, something went wrong"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "paragraph",
-                          "nodes": [
-                            {
-                              "type": "text",
-                              "text": "Try reloading the page. If the problem persists, contact the support."
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "role": "article",
-                  "styles": {
-                    "instance": {
-                      "grid-cell": {
-                        "xs": {
-                          "position": {
-                            "col": 1,
-                            "row": 1
-                          },
-                          "span": {
-                            "cols": 1,
-                            "rows": 1
-                          },
-                          "alignment": {
-                            "vertical": "center",
-                            "horizontal": "center"
-                          }
-                        }
-                      },
-                      "id": "myaxhjsvdw",
-                      "padding": {
-                        "xs": {
-                          "top": 5,
-                          "left": 5,
-                          "right": 5,
-                          "bottom": 5
-                        },
-                        "md": {
-                          "top": 15,
-                          "left": 15,
-                          "right": 15,
-                          "bottom": 15
-                        }
-                      }
-                    }
-                  }
-                }
-              ],
-              "styles": {
-                "instance": {
-                  "grid": {
-                    "xs": {
-                      "rows": [
-                        "auto"
-                      ],
-                      "cols": [
-                        "1fr"
-                      ]
-                    }
-                  },
-                  "id": "cmwjhkfdnp",
-                  "size": {
-                    "sm": {
-                      "maxWidth": 540
-                    },
-                    "md": {
-                      "maxWidth": 720
-                    },
-                    "lg": {
-                      "maxWidth": 960
-                    },
-                    "xl": {
-                      "maxWidth": 1140
-                    }
-                  },
-                  "margin": {
-                    "xs": {
-                      "top": 10,
-                      "left": "auto",
-                      "right": "auto",
-                      "bottom": 10
-                    },
-                    "md": {
-                      "top": 15,
-                      "bottom": 15
-                    },
-                    "xl": {
-                      "top": 25,
-                      "bottom": 25
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "/contentTypes/document/contentItems/89bb02ae-194e-828f-d595-df5675f5e6d1": {
-    "id": "/contentTypes/document/contentItems/89bb02ae-194e-828f-d595-df5675f5e6d1",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "89bb02ae-194e-828f-d595-df5675f5e6d1",
-    "properties": {
-      "nodes": [
-        {
-          "type": "layout-section",
-          "nodes": [
-            {
-              "type": "grid",
-              "nodes": [
-                {
-                  "type": "grid-cell",
-                  "nodes": [
-                    {
-                      "type": "text-block",
-                      "nodes": [
-                        {
-                          "type": "heading1",
-                          "attrs": {
-                            "id": "URg47"
-                          },
-                          "nodes": [
-                            {
-                              "type": "text",
-                              "text": "Reports"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "reports"
-                    }
-                  ],
-                  "role": "article",
-                  "styles": {
-                    "instance": {
-                      "grid-cell": {
-                        "xs": {
-                          "position": {
-                            "col": 1,
-                            "row": 1
-                          },
-                          "span": {
-                            "cols": 1,
-                            "rows": 1
-                          },
-                          "alignment": {
-                            "vertical": "center",
-                            "horizontal": "center"
-                          }
-                        }
-                      },
-                      "id": "myaxhjsvdw",
-                      "padding": {
-                        "xs": {
-                          "top": 5,
-                          "left": 5,
-                          "right": 5,
-                          "bottom": 5
-                        },
-                        "md": {
-                          "top": 15,
-                          "left": 15,
-                          "right": 15,
-                          "bottom": 15
-                        }
-                      }
-                    }
-                  }
-                }
-              ],
-              "styles": {
-                "instance": {
-                  "grid": {
-                    "xs": {
-                      "rows": [
-                        "auto"
-                      ],
-                      "cols": [
-                        "1fr"
-                      ]
-                    }
-                  },
-                  "id": "cmwjhkfdnp",
-                  "size": {
-                    "sm": {
-                      "maxWidth": 540
-                    },
-                    "md": {
-                      "maxWidth": 720
-                    },
-                    "lg": {
-                      "maxWidth": 960
-                    },
-                    "xl": {
-                      "maxWidth": 1140
-                    }
-                  },
-                  "margin": {
-                    "xs": {
-                      "top": 10,
-                      "left": "auto",
-                      "right": "auto",
-                      "bottom": 10
-                    },
-                    "md": {
-                      "top": 15,
-                      "bottom": 15
-                    },
-                    "xl": {
-                      "top": 25,
-                      "bottom": 25
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "/contentTypes/page/contentItems/5aafc9ee-a4a8-a062-9949-937c0e2b3734": {
-    "id": "/contentTypes/page/contentItems/5aafc9ee-a4a8-a062-9949-937c0e2b3734",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "5aafc9ee-a4a8-a062-9949-937c0e2b3734",
-    "properties": {
-      "en_us": {
-        "title": "Change password",
-        "description": "",
-        "keywords": "",
-        "documentId": "contentTypes/document/contentItems/5aafc9ee-a4a8-a062-9949-937c0e2b3734",
-        "permalink": "/change-password"
-      }
-    }
-  },
-  "/contentTypes/page/contentItems/38b4a583-e611-dbf8-b945-a2d591c61614": {
-    "id": "/contentTypes/page/contentItems/38b4a583-e611-dbf8-b945-a2d591c61614",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "38b4a583-e611-dbf8-b945-a2d591c61614",
-    "properties": {
-      "en_us": {
-        "title": "APIs: List",
-        "description": "",
-        "keywords": "",
-        "documentId": "contentTypes/document/contentItems/38b4a583-e611-dbf8-b945-a2d591c61614",
-        "permalink": "/apis"
-      }
-    }
-  },
-  "/contentTypes/blob/contentItems/4cac439d-5a3d-4b03-38bb-197d32256ee0": {
-    "id": "/contentTypes/blob/contentItems/4cac439d-5a3d-4b03-38bb-197d32256ee0",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "4cac439d-5a3d-4b03-38bb-197d32256ee0",
-    "properties": {
-      "fileName": "contoso-black.png",
-      "blobId": "",
-      "description": "",
-      "keywords": "",
-      "permalink": "/content/contoso-black.png",
-      "mimeType": "image/png",
-      "downloadUrl": "https://apimdeveloperportal.blob.core.windows.net/content/4cac439d-5a3d-4b03-38bb-197d32256ee0"
-    }
-  },
-  "/contentTypes/document/contentItems/81b0cd55-fb1a-12ee-e41a-d2d6b851ac60": {
-    "id": "/contentTypes/document/contentItems/81b0cd55-fb1a-12ee-e41a-d2d6b851ac60",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "81b0cd55-fb1a-12ee-e41a-d2d6b851ac60",
-    "properties": {
-      "nodes": [
-        {
-          "type": "layout-section",
-          "nodes": [
-            {
-              "type": "grid",
-              "nodes": [
-                {
-                  "type": "grid-cell",
-                  "nodes": [
-                    {
-                      "type": "text-block",
-                      "nodes": [
-                        {
-                          "type": "heading1",
-                          "attrs": {
-                            "id": "69nwi"
-                          },
-                          "nodes": [
-                            {
-                              "type": "text",
-                              "text": "Sign in"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "paragraph",
-                          "nodes": [
-                            {
-                              "type": "text",
-                              "text": "Not a member yet? "
-                            },
-                            {
-                              "type": "text",
-                              "text": "Sign up",
-                              "marks": [
-                                {
-                                  "type": "hyperlink",
-                                  "attrs": {
-                                    "target": "_self",
-                                    "targetId": "contentTypes/page/contentItems/0145411a-2c82-325a-4390-76cff184530b"
-                                  }
-                                }
-                              ]
-                            },
-                            {
-                              "type": "text",
-                              "text": "."
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "validationSummary"
-                    },
-                    {
-                      "type": "signin"
-                    },
-                    {
-                      "type": "text-block",
-                      "nodes": [
-                        {
-                          "type": "paragraph",
-                          "nodes": [
-                            {
-                              "type": "text",
-                              "text": "Forgot your password?",
-                              "marks": [
-                                {
-                                  "type": "hyperlink",
-                                  "attrs": {
-                                    "target": "_self",
-                                    "targetId": "contentTypes/page/contentItems/0fa17e1c-6497-f6a9-cf19-02b02b59bbf0"
-                                  }
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "signin-social"
-                    }
-                  ],
-                  "role": "article",
-                  "styles": {
-                    "instance": {
-                      "grid-cell": {
-                        "xs": {
-                          "position": {
-                            "col": 1,
-                            "row": 1
-                          },
-                          "span": {
-                            "cols": 1,
-                            "rows": 1
-                          },
-                          "alignment": {
-                            "vertical": "center",
-                            "horizontal": "center"
-                          }
-                        },
-                        "xl": {
-                          "alignment": {
-                            "horizontal": "start"
-                          }
-                        }
-                      },
-                      "id": "hxelfpwkug",
-                      "padding": {
-                        "xs": {
-                          "top": 5,
-                          "left": 5,
-                          "right": 5,
-                          "bottom": 5
-                        },
-                        "md": {
-                          "top": 15,
-                          "left": 15,
-                          "right": 15,
-                          "bottom": 15
-                        }
-                      }
-                    }
-                  }
-                }
-              ],
-              "styles": {
-                "instance": {
-                  "grid": {
-                    "xs": {
-                      "rows": [
-                        "auto"
-                      ],
-                      "cols": [
-                        "1fr"
-                      ]
-                    }
-                  },
-                  "id": "faxlwhyokx",
-                  "size": {
-                    "sm": {
-                      "maxWidth": 540
-                    },
-                    "md": {
-                      "maxWidth": 720
-                    },
-                    "lg": {
-                      "maxWidth": 960
-                    },
-                    "xl": {
-                      "maxWidth": 1140
-                    }
-                  },
-                  "margin": {
-                    "xs": {
-                      "top": 10,
-                      "left": "auto",
-                      "right": "auto",
-                      "bottom": 10
-                    },
-                    "md": {
-                      "top": 15,
-                      "bottom": 15
-                    },
-                    "xl": {
-                      "top": 25,
-                      "bottom": 25
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "/contentTypes/page/contentItems/e0987ca1-f458-b546-7697-7be594b35583": {
-    "id": "/contentTypes/page/contentItems/e0987ca1-f458-b546-7697-7be594b35583",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "e0987ca1-f458-b546-7697-7be594b35583",
-    "properties": {
-      "en_us": {
-        "title": "Home",
-        "description": "",
-        "keywords": "",
-        "permalink": "/",
-        "documentId": "contentTypes/document/contentItems/e0987ca1-f458-b546-7697-7be594b35583"
-      }
-    }
-  },
-  "/contentTypes/document/contentItems/f95c292b-b40b-e2cd-b5dc-71fffc97083d": {
-    "id": "/contentTypes/document/contentItems/f95c292b-b40b-e2cd-b5dc-71fffc97083d",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "f95c292b-b40b-e2cd-b5dc-71fffc97083d",
-    "properties": {
-      "nodes": [
-        {
-          "type": "layout-section",
-          "styles": null,
-          "nodes": [
-            {
-              "type": "grid",
-              "nodes": [
-                {
-                  "type": "grid-cell",
-                  "nodes": [
-                    {
-                      "type": "text-block",
-                      "nodes": [
-                        {
-                          "type": "heading1",
-                          "attrs": {
-                            "id": "nGEr2"
-                          },
-                          "nodes": [
-                            {
-                              "type": "text",
-                              "text": "Page you're looking for doesn't exist"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "role": "article",
-                  "styles": {
-                    "instance": {
-                      "grid-cell": {
-                        "xs": {
-                          "position": {
-                            "col": 1,
-                            "row": 1
-                          },
-                          "span": {
-                            "cols": 1,
-                            "rows": 1
-                          },
-                          "alignment": {
-                            "vertical": "center",
-                            "horizontal": "center"
-                          }
-                        }
-                      },
-                      "id": "myaxhjsvdw",
-                      "padding": {
-                        "xs": {
-                          "top": 5,
-                          "left": 5,
-                          "right": 5,
-                          "bottom": 5
-                        },
-                        "md": {
-                          "top": 15,
-                          "left": 15,
-                          "right": 15,
-                          "bottom": 15
-                        }
-                      }
-                    }
-                  }
-                }
-              ],
-              "styles": {
-                "instance": {
-                  "grid": {
-                    "xs": {
-                      "rows": [
-                        "auto"
-                      ],
-                      "cols": [
-                        "1fr"
-                      ]
-                    }
-                  },
-                  "id": "cmwjhkfdnp",
-                  "size": {
-                    "sm": {
-                      "maxWidth": 540
-                    },
-                    "md": {
-                      "maxWidth": 720
-                    },
-                    "lg": {
-                      "maxWidth": 960
-                    },
-                    "xl": {
-                      "maxWidth": 1140
-                    }
-                  },
-                  "margin": {
-                    "xs": {
-                      "top": 10,
-                      "left": "auto",
-                      "right": "auto",
-                      "bottom": 10
-                    },
-                    "md": {
-                      "top": 15,
-                      "bottom": 15
-                    },
-                    "xl": {
-                      "top": 25,
-                      "bottom": 25
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "/contentTypes/document/contentItems/1b2a9e4c-d53b-99d1-e363-348630d982b5": {
-    "id": "/contentTypes/document/contentItems/1b2a9e4c-d53b-99d1-e363-348630d982b5",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "1b2a9e4c-d53b-99d1-e363-348630d982b5",
-    "properties": {
-      "nodes": [
-        {
-          "type": "layout-section",
-          "nodes": [
-            {
-              "type": "grid",
-              "nodes": [
-                {
-                  "type": "grid-cell",
-                  "nodes": [
-                    {
-                      "type": "listOfApis",
-                      "itemStyleView": "dropdown",
-                      "allowSelection": true,
-                      "showApiType": true,
-                      "defaultGroupByTagToEnabled": false,
-                      "detailsPageHyperlink": null
-                    },
-                    {
-                      "type": "operationList",
-                      "allowSelection": true,
-                      "defaultGroupByTagToEnabled": false,
-                      "detailsPageHyperlink": null
-                    }
-                  ],
-                  "role": "navigation",
-                  "styles": {
-                    "instance": {
-                      "grid-cell": {
-                        "md": {
-                          "position": {
-                            "col": 1,
-                            "row": 1
-                          },
-                          "span": {
-                            "cols": 1,
-                            "rows": 1
-                          },
-                          "alignment": {
-                            "vertical": "center",
-                            "horizontal": "center"
-                          }
-                        },
-                        "xs": {
-                          "position": {
-                            "col": 1,
-                            "row": 1
-                          },
-                          "span": {
-                            "cols": 1,
-                            "rows": 1
-                          },
-                          "alignment": {
-                            "vertical": "center",
-                            "horizontal": "center"
-                          }
-                        },
-                        "xl": {
-                          "alignment": {
-                            "vertical": "start",
-                            "horizontal": "start"
-                          }
-                        }
-                      },
-                      "id": "ijdrsuhpjk",
-                      "padding": {
-                        "xs": {
-                          "top": 5,
-                          "left": 5,
-                          "right": 5,
-                          "bottom": 5
-                        },
-                        "md": {
-                          "top": 15,
-                          "left": 15,
-                          "right": 15,
-                          "bottom": 15
-                        }
-                      }
-                    }
+      "backdrop": true,
+      "styles": {
+        "instance": {
+          "components": {
+            "popupContainer": {
+              "default": {
+                "position": {
+                  "position": "fixed",
+                  "top": "50%",
+                  "right": 0
+                },
+                "background": {
+                  "colorId": "colors/defaultBg"
+                },
+                "transform": {
+                  "translate": {
+                    "x": "0px",
+                    "y": "calc(-50%)"
                   }
                 },
-                {
-                  "type": "grid-cell",
-                  "nodes": [
-                    {
-                      "type": "detailsOfApi",
-                      "changeLogPageHyperlink": {
-                        "target": "_self",
-                        "targetId": "contentTypes/page/contentItems/933ce351-2259-d7b7-3f4f-5c33f3ad328a"
-                      }
-                    },
-                    {
-                      "type": "operationDetails",
-                      "enableConsole": true,
-                      "enableScrollTo": false,
-                      "defaultSchemaView": "table"
-                    }
-                  ],
-                  "role": "article",
-                  "styles": {
-                    "instance": {
-                      "grid-cell": {
-                        "md": {
-                          "position": {
-                            "col": 2,
-                            "row": 1
-                          },
-                          "span": {
-                            "cols": 1,
-                            "rows": 1
-                          },
-                          "alignment": {
-                            "vertical": "center",
-                            "horizontal": "center"
-                          }
-                        },
-                        "xs": {
-                          "position": {
-                            "col": 1,
-                            "row": 2
-                          },
-                          "span": {
-                            "cols": 1,
-                            "rows": 1
-                          },
-                          "alignment": {
-                            "vertical": "center",
-                            "horizontal": "center"
-                          }
-                        },
-                        "xl": {
-                          "alignment": {
-                            "vertical": "start",
-                            "horizontal": "start"
-                          }
-                        }
-                      },
-                      "id": "ycqdvmhchp",
-                      "padding": {
-                        "xs": {
-                          "top": 5,
-                          "left": 5,
-                          "right": 5,
-                          "bottom": 5
-                        },
-                        "md": {
-                          "top": 15,
-                          "left": 15,
-                          "right": 15,
-                          "bottom": 15
-                        }
-                      }
-                    }
+                "size": {
+                  "height": "100%",
+                  "minWidth": 400
+                },
+                "padding": {
+                  "top": 20,
+                  "left": 30,
+                  "right": 30,
+                  "bottom": 30
+                },
+                "container": {
+                  "alignment": {
+                    "horizontal": "start"
+                  },
+                  "overflow": {
+                    "vertical": "scroll",
+                    "horizontal": "scroll"
                   }
-                }
-              ],
-              "styles": {
-                "instance": {
-                  "grid": {
-                    "md": {
-                      "rows": [
-                        "auto"
-                      ],
-                      "cols": [
-                        "1fr",
-                        "3fr"
-                      ]
-                    },
-                    "xs": {
-                      "rows": [
-                        "auto",
-                        "auto"
-                      ],
-                      "cols": [
-                        "1fr"
-                      ]
-                    }
+                },
+                "border": {
+                  "bottom": {
+                    "colorId": "colors/15o9C",
+                    "style": "solid",
+                    "width": "1"
                   },
-                  "id": "huzbxuibav",
-                  "size": {
-                    "sm": {
-                      "maxWidth": 540
-                    },
-                    "md": {
-                      "maxWidth": 720
-                    },
-                    "lg": {
-                      "maxWidth": 960
-                    },
-                    "xl": {
-                      "maxWidth": "1800"
-                    }
+                  "left": {
+                    "colorId": "colors/15o9C",
+                    "style": "solid",
+                    "width": "1"
                   },
-                  "margin": {
-                    "xs": {
-                      "top": 10,
-                      "left": "auto",
-                      "right": "auto",
-                      "bottom": 10
-                    },
-                    "md": {
-                      "top": 15,
-                      "bottom": 15
-                    },
-                    "xl": {
-                      "top": 25,
-                      "bottom": 25
-                    }
+                  "right": {
+                    "colorId": "colors/15o9C",
+                    "style": "solid",
+                    "width": "1"
+                  },
+                  "top": {
+                    "colorId": "colors/15o9C",
+                    "style": "solid",
+                    "width": "1"
                   }
                 }
               }
+            },
+            "popupBackdrop": {
+              "default": {
+                "background": {
+                  "colorId": "colors/dsGWq"
+                }
+              }
             }
-          ]
+          },
+          "id": "paypjjihrc"
+        }
+      },
+      "nodes": [
+        {
+          "type": "menu",
+          "navigationItemId": "main",
+          "layout": "vertical",
+          "styles": {
+            "appearance": "components/menu/default",
+            "instance": {
+              "size": {
+                "width": "100%"
+              },
+              "id": "hshpeaftpv"
+            }
+          }
+        },
+        {
+          "type": "menu",
+          "navigationItemId": "74ed66aa-1cc0-f91a-60c6-6e1b2aa239ea",
+          "layout": "vertical",
+          "styles": {
+            "appearance": "components/menu/default",
+            "instance": {
+              "size": {
+                "width": "100%"
+              },
+              "id": "ugylbhioik"
+            }
+          },
+          "security": {
+            "roles": [
+              "anonymous"
+            ]
+          }
+        },
+        {
+          "type": "menu",
+          "minHeading": null,
+          "maxHeading": null,
+          "navigationItemId": "ed7c0fc2-6fa3-2efd-4ec9-0d8feb484a12",
+          "layout": "vertical",
+          "styles": {
+            "appearance": "components/menu/default",
+            "instance": {
+              "size": {
+                "width": "100%"
+              },
+              "id": "ebhloafmvf",
+              "margin": null,
+              "padding": null
+            }
+          },
+          "security": {
+            "roles": [
+              "authenticated"
+            ]
+          }
+        },
+        {
+          "type": "dismiss-button",
+          "label": "✕",
+          "styles": {
+            "appearance": "components/button/no-border",
+            "instance": {
+              "id": "main-menu-dismiss",
+              "position": {
+                "position": "absolute",
+                "top": 0,
+                "right": 0
+              }
+            }
+          }
         }
       ]
-    }
-  },
-  "/contentTypes/blob/contentItems/76e348c4-48c2-e9f2-a270-8468dbf51f9b": {
-    "id": "/contentTypes/blob/contentItems/76e348c4-48c2-e9f2-a270-8468dbf51f9b",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "76e348c4-48c2-e9f2-a270-8468dbf51f9b",
-    "properties": {
-      "fileName": "OpenAI Patterns - Page 1.png",
-      "blobId": "76e348c4-48c2-e9f2-a270-8468dbf51f9b",
-      "description": "",
-      "keywords": "",
-      "permalink": "/content/OpenAI Patterns - Page 1.png",
-      "mimeType": "image/png"
     }
   },
   "/contentTypes/document/contentItems/home-page-layout": {
@@ -3025,6 +2555,716 @@
       ]
     }
   },
+  "/contentTypes/blob/contentItems/e0040739-879f-656c-856d-b0dfd678595b": {
+    "id": "/contentTypes/blob/contentItems/e0040739-879f-656c-856d-b0dfd678595b",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "e0040739-879f-656c-856d-b0dfd678595b",
+    "properties": {
+      "fileName": "OpenAI Patterns - Page 1 (3).png",
+      "blobId": "e0040739-879f-656c-856d-b0dfd678595b",
+      "description": "",
+      "keywords": "",
+      "permalink": "/content/OpenAI Patterns - Page 1 (3).png",
+      "mimeType": "image/png"
+    }
+  },
+  "/contentTypes/page/contentItems/4e3cf6a5-574a-ba08-1f23-2e7a38faa6d8": {
+    "id": "/contentTypes/page/contentItems/4e3cf6a5-574a-ba08-1f23-2e7a38faa6d8",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "4e3cf6a5-574a-ba08-1f23-2e7a38faa6d8",
+    "properties": {
+      "en_us": {
+        "title": "User: Profile",
+        "description": "",
+        "keywords": "",
+        "documentId": "contentTypes/document/contentItems/4e3cf6a5-574a-ba08-1f23-2e7a38faa6d8",
+        "permalink": "/profile"
+      }
+    }
+  },
+  "/contentTypes/document/contentItems/5aafc9ee-a4a8-a062-9949-937c0e2b3734": {
+    "id": "/contentTypes/document/contentItems/5aafc9ee-a4a8-a062-9949-937c0e2b3734",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "5aafc9ee-a4a8-a062-9949-937c0e2b3734",
+    "properties": {
+      "nodes": [
+        {
+          "type": "layout-section",
+          "nodes": [
+            {
+              "type": "grid",
+              "nodes": [
+                {
+                  "type": "grid-cell",
+                  "nodes": [
+                    {
+                      "type": "text-block",
+                      "nodes": [
+                        {
+                          "type": "heading1",
+                          "attrs": {
+                            "id": "HKOgm"
+                          },
+                          "nodes": [
+                            {
+                              "type": "text",
+                              "text": "Change password"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "validationSummary"
+                    },
+                    {
+                      "type": "change-password",
+                      "requireHipCaptcha": null
+                    }
+                  ],
+                  "role": "article",
+                  "styles": {
+                    "instance": {
+                      "grid-cell": {
+                        "xs": {
+                          "position": {
+                            "col": 1,
+                            "row": 1
+                          },
+                          "span": {
+                            "cols": 1,
+                            "rows": 1
+                          },
+                          "alignment": {
+                            "vertical": "center",
+                            "horizontal": "center"
+                          }
+                        }
+                      },
+                      "id": "myaxhjsvdw",
+                      "padding": {
+                        "xs": {
+                          "top": 5,
+                          "left": 5,
+                          "right": 5,
+                          "bottom": 5
+                        },
+                        "md": {
+                          "top": 15,
+                          "left": 15,
+                          "right": 15,
+                          "bottom": 15
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "styles": {
+                "instance": {
+                  "grid": {
+                    "xs": {
+                      "rows": [
+                        "auto"
+                      ],
+                      "cols": [
+                        "1fr"
+                      ]
+                    }
+                  },
+                  "id": "cmwjhkfdnp",
+                  "size": {
+                    "sm": {
+                      "maxWidth": 540
+                    },
+                    "md": {
+                      "maxWidth": 720
+                    },
+                    "lg": {
+                      "maxWidth": 960
+                    },
+                    "xl": {
+                      "maxWidth": 1140
+                    }
+                  },
+                  "margin": {
+                    "xs": {
+                      "top": 10,
+                      "left": "auto",
+                      "right": "auto",
+                      "bottom": 10
+                    },
+                    "md": {
+                      "top": 15,
+                      "bottom": 15
+                    },
+                    "xl": {
+                      "top": 25,
+                      "bottom": 25
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/contentTypes/blob/contentItems/a2514081-47cb-95b1-ef0b-aef128c7a7ed": {
+    "id": "/contentTypes/blob/contentItems/a2514081-47cb-95b1-ef0b-aef128c7a7ed",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "a2514081-47cb-95b1-ef0b-aef128c7a7ed",
+    "properties": {
+      "blobId": "",
+      "fileName": "featured-2.jpg",
+      "description": "",
+      "keywords": "",
+      "downloadUrl": "https://apimdeveloperportal.blob.core.windows.net/content/a2514081-47cb-95b1-ef0b-aef128c7a7ed",
+      "permalink": "/content/featured-2.jpg",
+      "mimeType": "image/jpeg"
+    }
+  },
+  "/contentTypes/blob/contentItems/c5d2da83-b255-245c-144b-cd3c242e9791": {
+    "id": "/contentTypes/blob/contentItems/c5d2da83-b255-245c-144b-cd3c242e9791",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "c5d2da83-b255-245c-144b-cd3c242e9791",
+    "properties": {
+      "blobId": "",
+      "fileName": "featured-1.jpg",
+      "description": "",
+      "keywords": "",
+      "downloadUrl": "https://apimdeveloperportal.blob.core.windows.net/content/c5d2da83-b255-245c-144b-cd3c242e9791",
+      "permalink": "/content/featured-1.jpg",
+      "mimeType": "image/jpeg"
+    }
+  },
+  "/contentTypes/document/contentItems/81b0cd55-fb1a-12ee-e41a-d2d6b851ac60": {
+    "id": "/contentTypes/document/contentItems/81b0cd55-fb1a-12ee-e41a-d2d6b851ac60",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "81b0cd55-fb1a-12ee-e41a-d2d6b851ac60",
+    "properties": {
+      "nodes": [
+        {
+          "type": "layout-section",
+          "nodes": [
+            {
+              "type": "grid",
+              "nodes": [
+                {
+                  "type": "grid-cell",
+                  "nodes": [
+                    {
+                      "type": "text-block",
+                      "nodes": [
+                        {
+                          "type": "heading1",
+                          "attrs": {
+                            "id": "69nwi"
+                          },
+                          "nodes": [
+                            {
+                              "type": "text",
+                              "text": "Sign in"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "paragraph",
+                          "nodes": [
+                            {
+                              "type": "text",
+                              "text": "Not a member yet? "
+                            },
+                            {
+                              "type": "text",
+                              "text": "Sign up",
+                              "marks": [
+                                {
+                                  "type": "hyperlink",
+                                  "attrs": {
+                                    "target": "_self",
+                                    "targetId": "contentTypes/page/contentItems/0145411a-2c82-325a-4390-76cff184530b"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "text": "."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "validationSummary"
+                    },
+                    {
+                      "type": "signin"
+                    },
+                    {
+                      "type": "text-block",
+                      "nodes": [
+                        {
+                          "type": "paragraph",
+                          "nodes": [
+                            {
+                              "type": "text",
+                              "text": "Forgot your password?",
+                              "marks": [
+                                {
+                                  "type": "hyperlink",
+                                  "attrs": {
+                                    "target": "_self",
+                                    "targetId": "contentTypes/page/contentItems/0fa17e1c-6497-f6a9-cf19-02b02b59bbf0"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "signin-social"
+                    }
+                  ],
+                  "role": "article",
+                  "styles": {
+                    "instance": {
+                      "grid-cell": {
+                        "xs": {
+                          "position": {
+                            "col": 1,
+                            "row": 1
+                          },
+                          "span": {
+                            "cols": 1,
+                            "rows": 1
+                          },
+                          "alignment": {
+                            "vertical": "center",
+                            "horizontal": "center"
+                          }
+                        },
+                        "xl": {
+                          "alignment": {
+                            "horizontal": "start"
+                          }
+                        }
+                      },
+                      "id": "hxelfpwkug",
+                      "padding": {
+                        "xs": {
+                          "top": 5,
+                          "left": 5,
+                          "right": 5,
+                          "bottom": 5
+                        },
+                        "md": {
+                          "top": 15,
+                          "left": 15,
+                          "right": 15,
+                          "bottom": 15
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "styles": {
+                "instance": {
+                  "grid": {
+                    "xs": {
+                      "rows": [
+                        "auto"
+                      ],
+                      "cols": [
+                        "1fr"
+                      ]
+                    }
+                  },
+                  "id": "faxlwhyokx",
+                  "size": {
+                    "sm": {
+                      "maxWidth": 540
+                    },
+                    "md": {
+                      "maxWidth": 720
+                    },
+                    "lg": {
+                      "maxWidth": 960
+                    },
+                    "xl": {
+                      "maxWidth": 1140
+                    }
+                  },
+                  "margin": {
+                    "xs": {
+                      "top": 10,
+                      "left": "auto",
+                      "right": "auto",
+                      "bottom": 10
+                    },
+                    "md": {
+                      "top": 15,
+                      "bottom": 15
+                    },
+                    "xl": {
+                      "top": 25,
+                      "bottom": 25
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/contentTypes/page/contentItems/933ce351-2259-d7b7-3f4f-5c33f3ad328a": {
+    "id": "/contentTypes/page/contentItems/933ce351-2259-d7b7-3f4f-5c33f3ad328a",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "933ce351-2259-d7b7-3f4f-5c33f3ad328a",
+    "properties": {
+      "en_us": {
+        "title": "APIs: Changelog",
+        "description": "",
+        "keywords": "",
+        "documentId": "contentTypes/document/contentItems/933ce351-2259-d7b7-3f4f-5c33f3ad328a",
+        "permalink": "/api-changelog"
+      }
+    }
+  },
+  "/contentTypes/page/contentItems/9862f795-6e36-217e-6dc7-cf7226591267": {
+    "id": "/contentTypes/page/contentItems/9862f795-6e36-217e-6dc7-cf7226591267",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "9862f795-6e36-217e-6dc7-cf7226591267",
+    "properties": {
+      "en_us": {
+        "title": "Products: List",
+        "description": "",
+        "keywords": "",
+        "documentId": "contentTypes/document/contentItems/9862f795-6e36-217e-6dc7-cf7226591267",
+        "permalink": "/products"
+      }
+    }
+  },
+  "/contentTypes/document/contentItems/0145411a-2c82-325a-4390-76cff184530b": {
+    "id": "/contentTypes/document/contentItems/0145411a-2c82-325a-4390-76cff184530b",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "0145411a-2c82-325a-4390-76cff184530b",
+    "properties": {
+      "nodes": [
+        {
+          "type": "layout-section",
+          "styles": null,
+          "nodes": [
+            {
+              "type": "grid",
+              "nodes": [
+                {
+                  "type": "grid-cell",
+                  "nodes": [
+                    {
+                      "type": "text-block",
+                      "nodes": [
+                        {
+                          "type": "heading1",
+                          "attrs": {
+                            "id": "3dEFc"
+                          },
+                          "nodes": [
+                            {
+                              "type": "text",
+                              "text": "Sign up"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "paragraph",
+                          "nodes": [
+                            {
+                              "type": "text",
+                              "text": "Already a member? "
+                            },
+                            {
+                              "type": "text",
+                              "text": "Sign in",
+                              "marks": [
+                                {
+                                  "type": "hyperlink",
+                                  "attrs": {
+                                    "target": "_self",
+                                    "targetId": "contentTypes/page/contentItems/81b0cd55-fb1a-12ee-e41a-d2d6b851ac60"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "text": "."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "validationSummary"
+                    },
+                    {
+                      "type": "signup"
+                    }
+                  ],
+                  "role": "article",
+                  "styles": {
+                    "instance": {
+                      "grid-cell": {
+                        "xs": {
+                          "position": {
+                            "col": 1,
+                            "row": 1
+                          },
+                          "span": {
+                            "cols": 1,
+                            "rows": 1
+                          },
+                          "alignment": {
+                            "vertical": "center",
+                            "horizontal": "center"
+                          }
+                        },
+                        "xl": {
+                          "alignment": {
+                            "vertical": "start",
+                            "horizontal": "start"
+                          }
+                        }
+                      },
+                      "id": "grviqmbjhh",
+                      "padding": {
+                        "xs": {
+                          "top": 5,
+                          "left": 5,
+                          "right": 5,
+                          "bottom": 5
+                        },
+                        "md": {
+                          "top": 15,
+                          "left": 15,
+                          "right": 15,
+                          "bottom": 15
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "styles": {
+                "instance": {
+                  "grid": {
+                    "xs": {
+                      "rows": [
+                        "auto"
+                      ],
+                      "cols": [
+                        "1fr"
+                      ]
+                    }
+                  },
+                  "id": "nutidoheja",
+                  "size": {
+                    "sm": {
+                      "maxWidth": 540
+                    },
+                    "md": {
+                      "maxWidth": 720
+                    },
+                    "lg": {
+                      "maxWidth": 960
+                    },
+                    "xl": {
+                      "maxWidth": 1140
+                    }
+                  },
+                  "margin": {
+                    "xs": {
+                      "top": 10,
+                      "left": "auto",
+                      "right": "auto",
+                      "bottom": 10
+                    },
+                    "md": {
+                      "top": 15,
+                      "bottom": 15
+                    },
+                    "xl": {
+                      "top": 25,
+                      "bottom": 25
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/contentTypes/blob/contentItems/4cac439d-5a3d-4b03-38bb-197d32256ee0": {
+    "id": "/contentTypes/blob/contentItems/4cac439d-5a3d-4b03-38bb-197d32256ee0",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "4cac439d-5a3d-4b03-38bb-197d32256ee0",
+    "properties": {
+      "fileName": "contoso-black.png",
+      "blobId": "",
+      "description": "",
+      "keywords": "",
+      "permalink": "/content/contoso-black.png",
+      "mimeType": "image/png",
+      "downloadUrl": "https://apimdeveloperportal.blob.core.windows.net/content/4cac439d-5a3d-4b03-38bb-197d32256ee0"
+    }
+  },
+  "/contentTypes/blob/contentItems/76e348c4-48c2-e9f2-a270-8468dbf51f9b": {
+    "id": "/contentTypes/blob/contentItems/76e348c4-48c2-e9f2-a270-8468dbf51f9b",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "76e348c4-48c2-e9f2-a270-8468dbf51f9b",
+    "properties": {
+      "fileName": "OpenAI Patterns - Page 1.png",
+      "blobId": "76e348c4-48c2-e9f2-a270-8468dbf51f9b",
+      "description": "",
+      "keywords": "",
+      "permalink": "/content/OpenAI Patterns - Page 1.png",
+      "mimeType": "image/png"
+    }
+  },
+  "/contentTypes/document/contentItems/89bb02ae-194e-828f-d595-df5675f5e6d1": {
+    "id": "/contentTypes/document/contentItems/89bb02ae-194e-828f-d595-df5675f5e6d1",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "89bb02ae-194e-828f-d595-df5675f5e6d1",
+    "properties": {
+      "nodes": [
+        {
+          "type": "layout-section",
+          "nodes": [
+            {
+              "type": "grid",
+              "nodes": [
+                {
+                  "type": "grid-cell",
+                  "nodes": [
+                    {
+                      "type": "text-block",
+                      "nodes": [
+                        {
+                          "type": "heading1",
+                          "attrs": {
+                            "id": "URg47"
+                          },
+                          "nodes": [
+                            {
+                              "type": "text",
+                              "text": "Reports"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "reports"
+                    }
+                  ],
+                  "role": "article",
+                  "styles": {
+                    "instance": {
+                      "grid-cell": {
+                        "xs": {
+                          "position": {
+                            "col": 1,
+                            "row": 1
+                          },
+                          "span": {
+                            "cols": 1,
+                            "rows": 1
+                          },
+                          "alignment": {
+                            "vertical": "center",
+                            "horizontal": "center"
+                          }
+                        }
+                      },
+                      "id": "myaxhjsvdw",
+                      "padding": {
+                        "xs": {
+                          "top": 5,
+                          "left": 5,
+                          "right": 5,
+                          "bottom": 5
+                        },
+                        "md": {
+                          "top": 15,
+                          "left": 15,
+                          "right": 15,
+                          "bottom": 15
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "styles": {
+                "instance": {
+                  "grid": {
+                    "xs": {
+                      "rows": [
+                        "auto"
+                      ],
+                      "cols": [
+                        "1fr"
+                      ]
+                    }
+                  },
+                  "id": "cmwjhkfdnp",
+                  "size": {
+                    "sm": {
+                      "maxWidth": 540
+                    },
+                    "md": {
+                      "maxWidth": 720
+                    },
+                    "lg": {
+                      "maxWidth": 960
+                    },
+                    "xl": {
+                      "maxWidth": 1140
+                    }
+                  },
+                  "margin": {
+                    "xs": {
+                      "top": 10,
+                      "left": "auto",
+                      "right": "auto",
+                      "bottom": 10
+                    },
+                    "md": {
+                      "top": 15,
+                      "bottom": 15
+                    },
+                    "xl": {
+                      "top": 25,
+                      "bottom": 25
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
   "/contentTypes/document/contentItems/4e3cf6a5-574a-ba08-1f23-2e7a38faa6d8": {
     "id": "/contentTypes/document/contentItems/4e3cf6a5-574a-ba08-1f23-2e7a38faa6d8",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
@@ -3151,6 +3391,524 @@
                     }
                   },
                   "id": "tbebtkzfma",
+                  "size": {
+                    "sm": {
+                      "maxWidth": 540
+                    },
+                    "md": {
+                      "maxWidth": 720
+                    },
+                    "lg": {
+                      "maxWidth": 960
+                    },
+                    "xl": {
+                      "maxWidth": 1140
+                    }
+                  },
+                  "margin": {
+                    "xs": {
+                      "top": 10,
+                      "left": "auto",
+                      "right": "auto",
+                      "bottom": 10
+                    },
+                    "md": {
+                      "top": 15,
+                      "bottom": 15
+                    },
+                    "xl": {
+                      "top": 25,
+                      "bottom": 25
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/contentTypes/page/contentItems/5aafc9ee-a4a8-a062-9949-937c0e2b3734": {
+    "id": "/contentTypes/page/contentItems/5aafc9ee-a4a8-a062-9949-937c0e2b3734",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "5aafc9ee-a4a8-a062-9949-937c0e2b3734",
+    "properties": {
+      "en_us": {
+        "title": "Change password",
+        "description": "",
+        "keywords": "",
+        "documentId": "contentTypes/document/contentItems/5aafc9ee-a4a8-a062-9949-937c0e2b3734",
+        "permalink": "/change-password"
+      }
+    }
+  },
+  "/contentTypes/page/contentItems/1b2a9e4c-d53b-99d1-e363-348630d982b5": {
+    "id": "/contentTypes/page/contentItems/1b2a9e4c-d53b-99d1-e363-348630d982b5",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "1b2a9e4c-d53b-99d1-e363-348630d982b5",
+    "properties": {
+      "en_us": {
+        "title": "APIs: Details",
+        "description": "",
+        "keywords": "",
+        "documentId": "contentTypes/document/contentItems/1b2a9e4c-d53b-99d1-e363-348630d982b5",
+        "permalink": "/api-details"
+      }
+    }
+  },
+  "/contentTypes/url/contentItems/1bec2534-46c4-7555-f8ec-ffcd9645fc2e": {
+    "id": "/contentTypes/url/contentItems/1bec2534-46c4-7555-f8ec-ffcd9645fc2e",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "1bec2534-46c4-7555-f8ec-ffcd9645fc2e",
+    "properties": {
+      "title": "#signout",
+      "permalink": "#signout"
+    }
+  },
+  "/contentTypes/blob/contentItems/6950c674-1aeb-0171-b4a4-ce227104fdfb": {
+    "id": "/contentTypes/blob/contentItems/6950c674-1aeb-0171-b4a4-ce227104fdfb",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "6950c674-1aeb-0171-b4a4-ce227104fdfb",
+    "properties": {
+      "fileName": "Screenshot 2024-04-30 at 11.07.41 AM.png",
+      "blobId": "6950c674-1aeb-0171-b4a4-ce227104fdfb",
+      "description": "",
+      "keywords": "",
+      "permalink": "/content/Screenshot 2024-04-30 at 11.07.41 AM.png",
+      "mimeType": "image/png"
+    }
+  },
+  "/contentTypes/page/contentItems/bc0b16ea-592d-c4c2-e5b6-ccef526cf42a": {
+    "id": "/contentTypes/page/contentItems/bc0b16ea-592d-c4c2-e5b6-ccef526cf42a",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "bc0b16ea-592d-c4c2-e5b6-ccef526cf42a",
+    "properties": {
+      "en_us": {
+        "title": "Confirm password",
+        "description": "",
+        "keywords": "",
+        "documentId": "contentTypes/document/contentItems/bc0b16ea-592d-c4c2-e5b6-ccef526cf42a",
+        "permalink": "/confirm-password"
+      }
+    }
+  },
+  "/contentTypes/url/contentItems/e4a52924-c46c-8797-b4d2-025e1f41896a": {
+    "id": "/contentTypes/url/contentItems/e4a52924-c46c-8797-b4d2-025e1f41896a",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "e4a52924-c46c-8797-b4d2-025e1f41896a",
+    "properties": {
+      "title": "https://aka.ms/apimrocks",
+      "permalink": "https://aka.ms/apimrocks"
+    }
+  },
+  "/contentTypes/document/contentItems/3bc2e097-114e-cd8d-dc51-4139bcbdb8c0": {
+    "id": "/contentTypes/document/contentItems/3bc2e097-114e-cd8d-dc51-4139bcbdb8c0",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "3bc2e097-114e-cd8d-dc51-4139bcbdb8c0",
+    "properties": {
+      "nodes": [
+        {
+          "type": "layout-section",
+          "nodes": [
+            {
+              "type": "grid",
+              "nodes": [
+                {
+                  "type": "grid-cell",
+                  "nodes": [
+                    {
+                      "type": "text-block",
+                      "nodes": [
+                        {
+                          "type": "heading1",
+                          "attrs": {
+                            "id": "UKXkJ"
+                          },
+                          "nodes": [
+                            {
+                              "type": "text",
+                              "text": "Oops, something went wrong"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "paragraph",
+                          "nodes": [
+                            {
+                              "type": "text",
+                              "text": "Try reloading the page. If the problem persists, contact the support."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "role": "article",
+                  "styles": {
+                    "instance": {
+                      "grid-cell": {
+                        "xs": {
+                          "position": {
+                            "col": 1,
+                            "row": 1
+                          },
+                          "span": {
+                            "cols": 1,
+                            "rows": 1
+                          },
+                          "alignment": {
+                            "vertical": "center",
+                            "horizontal": "center"
+                          }
+                        }
+                      },
+                      "id": "myaxhjsvdw",
+                      "padding": {
+                        "xs": {
+                          "top": 5,
+                          "left": 5,
+                          "right": 5,
+                          "bottom": 5
+                        },
+                        "md": {
+                          "top": 15,
+                          "left": 15,
+                          "right": 15,
+                          "bottom": 15
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "styles": {
+                "instance": {
+                  "grid": {
+                    "xs": {
+                      "rows": [
+                        "auto"
+                      ],
+                      "cols": [
+                        "1fr"
+                      ]
+                    }
+                  },
+                  "id": "cmwjhkfdnp",
+                  "size": {
+                    "sm": {
+                      "maxWidth": 540
+                    },
+                    "md": {
+                      "maxWidth": 720
+                    },
+                    "lg": {
+                      "maxWidth": 960
+                    },
+                    "xl": {
+                      "maxWidth": 1140
+                    }
+                  },
+                  "margin": {
+                    "xs": {
+                      "top": 10,
+                      "left": "auto",
+                      "right": "auto",
+                      "bottom": 10
+                    },
+                    "md": {
+                      "top": 15,
+                      "bottom": 15
+                    },
+                    "xl": {
+                      "top": 25,
+                      "bottom": 25
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/contentTypes/blob/contentItems/3a78b145-fd4e-b475-6a7f-4d039cf91d76": {
+    "id": "/contentTypes/blob/contentItems/3a78b145-fd4e-b475-6a7f-4d039cf91d76",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "3a78b145-fd4e-b475-6a7f-4d039cf91d76",
+    "properties": {
+      "fileName": "OpenAI Patterns - Page 1 (4).png",
+      "blobId": "3a78b145-fd4e-b475-6a7f-4d039cf91d76",
+      "description": "",
+      "keywords": "",
+      "permalink": "/content/OpenAI Patterns - Page 1 (4).png",
+      "mimeType": "image/png"
+    }
+  },
+  "/contentTypes/page/contentItems/38b4a583-e611-dbf8-b945-a2d591c61614": {
+    "id": "/contentTypes/page/contentItems/38b4a583-e611-dbf8-b945-a2d591c61614",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "38b4a583-e611-dbf8-b945-a2d591c61614",
+    "properties": {
+      "en_us": {
+        "title": "APIs: List",
+        "description": "",
+        "keywords": "",
+        "documentId": "contentTypes/document/contentItems/38b4a583-e611-dbf8-b945-a2d591c61614",
+        "permalink": "/apis"
+      }
+    }
+  },
+  "/contentTypes/url/contentItems/a213a574-5acb-8520-26b3-27af16d7f9bc": {
+    "id": "/contentTypes/url/contentItems/a213a574-5acb-8520-26b3-27af16d7f9bc",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "a213a574-5acb-8520-26b3-27af16d7f9bc",
+    "properties": {
+      "title": "https://azure.microsoft.com/services/api-management/",
+      "description": "",
+      "permalink": "https://azure.microsoft.com/services/api-management/"
+    }
+  },
+  "/contentTypes/document/contentItems/23cfb598-29dd-fd28-7b05-c8ffe801980c": {
+    "id": "/contentTypes/document/contentItems/23cfb598-29dd-fd28-7b05-c8ffe801980c",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "23cfb598-29dd-fd28-7b05-c8ffe801980c",
+    "properties": {
+      "nodes": [
+        {
+          "type": "layout-section",
+          "nodes": [
+            {
+              "type": "grid",
+              "nodes": [
+                {
+                  "type": "grid-cell",
+                  "nodes": [
+                    {
+                      "type": "text-block",
+                      "nodes": [
+                        {
+                          "type": "heading1",
+                          "attrs": {
+                            "id": "ALVCQ"
+                          },
+                          "nodes": [
+                            {
+                              "type": "text",
+                              "text": "Complete sign up"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "validationSummary"
+                    },
+                    {
+                      "type": "signup-social"
+                    }
+                  ],
+                  "role": "article",
+                  "styles": {
+                    "instance": {
+                      "grid-cell": {
+                        "xs": {
+                          "position": {
+                            "col": 1,
+                            "row": 1
+                          },
+                          "span": {
+                            "cols": 1,
+                            "rows": 1
+                          },
+                          "alignment": {
+                            "vertical": "center",
+                            "horizontal": "center"
+                          }
+                        },
+                        "xl": {
+                          "alignment": {
+                            "vertical": "center",
+                            "horizontal": "start"
+                          }
+                        }
+                      },
+                      "id": "myaxhjsvdw",
+                      "padding": {
+                        "xs": {
+                          "top": 5,
+                          "left": 5,
+                          "right": 5,
+                          "bottom": 5
+                        },
+                        "md": {
+                          "top": 15,
+                          "left": 15,
+                          "right": 15,
+                          "bottom": 15
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "styles": {
+                "instance": {
+                  "grid": {
+                    "xs": {
+                      "rows": [
+                        "auto"
+                      ],
+                      "cols": [
+                        "1fr"
+                      ]
+                    }
+                  },
+                  "id": "cmwjhkfdnp",
+                  "size": {
+                    "sm": {
+                      "maxWidth": 540
+                    },
+                    "md": {
+                      "maxWidth": 720
+                    },
+                    "lg": {
+                      "maxWidth": 960
+                    },
+                    "xl": {
+                      "maxWidth": 1140
+                    }
+                  },
+                  "margin": {
+                    "xs": {
+                      "top": 10,
+                      "left": "auto",
+                      "right": "auto",
+                      "bottom": 10
+                    },
+                    "md": {
+                      "top": 15,
+                      "bottom": 15
+                    },
+                    "xl": {
+                      "top": 25,
+                      "bottom": 25
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "/contentTypes/page/contentItems/23cfb598-29dd-fd28-7b05-c8ffe801980c": {
+    "id": "/contentTypes/page/contentItems/23cfb598-29dd-fd28-7b05-c8ffe801980c",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "23cfb598-29dd-fd28-7b05-c8ffe801980c",
+    "properties": {
+      "en_us": {
+        "title": "Sign up with OAuth",
+        "description": "",
+        "keywords": "",
+        "documentId": "contentTypes/document/contentItems/23cfb598-29dd-fd28-7b05-c8ffe801980c",
+        "permalink": "/signup-oauth"
+      }
+    }
+  },
+  "/contentTypes/document/contentItems/38b4a583-e611-dbf8-b945-a2d591c61614": {
+    "id": "/contentTypes/document/contentItems/38b4a583-e611-dbf8-b945-a2d591c61614",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "38b4a583-e611-dbf8-b945-a2d591c61614",
+    "properties": {
+      "nodes": [
+        {
+          "type": "layout-section",
+          "nodes": [
+            {
+              "type": "grid",
+              "nodes": [
+                {
+                  "type": "grid-cell",
+                  "nodes": [
+                    {
+                      "type": "text-block",
+                      "nodes": [
+                        {
+                          "type": "heading1",
+                          "identifier": "6YERT",
+                          "nodes": [
+                            {
+                              "type": "text",
+                              "text": "APIs"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listOfApis",
+                      "itemStyleView": "list",
+                      "showApiType": true,
+                      "defaultGroupByTagToEnabled": false,
+                      "detailsPageHyperlink": {
+                        "targetId": "contentTypes/page/contentItems/1b2a9e4c-d53b-99d1-e363-348630d982b5"
+                      }
+                    }
+                  ],
+                  "role": "article",
+                  "styles": {
+                    "instance": {
+                      "grid-cell": {
+                        "xs": {
+                          "position": {
+                            "col": 1,
+                            "row": 1
+                          },
+                          "span": {
+                            "cols": 1,
+                            "rows": 1
+                          },
+                          "alignment": {
+                            "vertical": "center",
+                            "horizontal": "center"
+                          }
+                        }
+                      },
+                      "id": "cbtmarloqy",
+                      "padding": {
+                        "xs": {
+                          "top": 5,
+                          "left": 5,
+                          "right": 5,
+                          "bottom": 5
+                        },
+                        "md": {
+                          "top": 15,
+                          "left": 15,
+                          "right": 15,
+                          "bottom": 15
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "styles": {
+                "instance": {
+                  "grid": {
+                    "xs": {
+                      "rows": [
+                        "auto"
+                      ],
+                      "cols": [
+                        "1fr"
+                      ]
+                    }
+                  },
+                  "id": "eehtgpxfrf",
                   "size": {
                     "sm": {
                       "maxWidth": 540
@@ -3318,876 +4076,35 @@
       ]
     }
   },
-  "/contentTypes/document/contentItems/5aafc9ee-a4a8-a062-9949-937c0e2b3734": {
-    "id": "/contentTypes/document/contentItems/5aafc9ee-a4a8-a062-9949-937c0e2b3734",
+  "/contentTypes/document/contentItems/configuration": {
+    "id": "/contentTypes/document/contentItems/configuration",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "5aafc9ee-a4a8-a062-9949-937c0e2b3734",
+    "name": "configuration",
     "properties": {
       "nodes": [
         {
-          "type": "layout-section",
-          "nodes": [
-            {
-              "type": "grid",
-              "nodes": [
-                {
-                  "type": "grid-cell",
-                  "nodes": [
-                    {
-                      "type": "text-block",
-                      "nodes": [
-                        {
-                          "type": "heading1",
-                          "attrs": {
-                            "id": "HKOgm"
-                          },
-                          "nodes": [
-                            {
-                              "type": "text",
-                              "text": "Change password"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "validationSummary"
-                    },
-                    {
-                      "type": "change-password",
-                      "requireHipCaptcha": null
-                    }
-                  ],
-                  "role": "article",
-                  "styles": {
-                    "instance": {
-                      "grid-cell": {
-                        "xs": {
-                          "position": {
-                            "col": 1,
-                            "row": 1
-                          },
-                          "span": {
-                            "cols": 1,
-                            "rows": 1
-                          },
-                          "alignment": {
-                            "vertical": "center",
-                            "horizontal": "center"
-                          }
-                        }
-                      },
-                      "id": "myaxhjsvdw",
-                      "padding": {
-                        "xs": {
-                          "top": 5,
-                          "left": 5,
-                          "right": 5,
-                          "bottom": 5
-                        },
-                        "md": {
-                          "top": 15,
-                          "left": 15,
-                          "right": 15,
-                          "bottom": 15
-                        }
-                      }
-                    }
-                  }
-                }
-              ],
-              "styles": {
-                "instance": {
-                  "grid": {
-                    "xs": {
-                      "rows": [
-                        "auto"
-                      ],
-                      "cols": [
-                        "1fr"
-                      ]
-                    }
-                  },
-                  "id": "cmwjhkfdnp",
-                  "size": {
-                    "sm": {
-                      "maxWidth": 540
-                    },
-                    "md": {
-                      "maxWidth": 720
-                    },
-                    "lg": {
-                      "maxWidth": 960
-                    },
-                    "xl": {
-                      "maxWidth": 1140
-                    }
-                  },
-                  "margin": {
-                    "xs": {
-                      "top": 10,
-                      "left": "auto",
-                      "right": "auto",
-                      "bottom": 10
-                    },
-                    "md": {
-                      "top": 15,
-                      "bottom": 15
-                    },
-                    "xl": {
-                      "top": 25,
-                      "bottom": 25
-                    }
-                  }
-                }
-              }
-            }
-          ]
+          "site": {
+            "title": "Microsoft Azure API Management - developer portal",
+            "description": "Discover APIs, learn how to use them, try them out interactively, and sign up to acquire keys.",
+            "keywords": "Azure, API Management, API, developer",
+            "faviconSourceId": null,
+            "author": "Microsoft Azure API Management"
+          }
         }
       ]
     }
   },
-  "/contentTypes/document/contentItems/0145411a-2c82-325a-4390-76cff184530b": {
-    "id": "/contentTypes/document/contentItems/0145411a-2c82-325a-4390-76cff184530b",
+  "/contentTypes/layout/contentItems/default": {
+    "id": "/contentTypes/layout/contentItems/default",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "0145411a-2c82-325a-4390-76cff184530b",
-    "properties": {
-      "nodes": [
-        {
-          "type": "layout-section",
-          "styles": null,
-          "nodes": [
-            {
-              "type": "grid",
-              "nodes": [
-                {
-                  "type": "grid-cell",
-                  "nodes": [
-                    {
-                      "type": "text-block",
-                      "nodes": [
-                        {
-                          "type": "heading1",
-                          "attrs": {
-                            "id": "3dEFc"
-                          },
-                          "nodes": [
-                            {
-                              "type": "text",
-                              "text": "Sign up"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "paragraph",
-                          "nodes": [
-                            {
-                              "type": "text",
-                              "text": "Already a member? "
-                            },
-                            {
-                              "type": "text",
-                              "text": "Sign in",
-                              "marks": [
-                                {
-                                  "type": "hyperlink",
-                                  "attrs": {
-                                    "target": "_self",
-                                    "targetId": "contentTypes/page/contentItems/81b0cd55-fb1a-12ee-e41a-d2d6b851ac60"
-                                  }
-                                }
-                              ]
-                            },
-                            {
-                              "type": "text",
-                              "text": "."
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "validationSummary"
-                    },
-                    {
-                      "type": "signup"
-                    }
-                  ],
-                  "role": "article",
-                  "styles": {
-                    "instance": {
-                      "grid-cell": {
-                        "xs": {
-                          "position": {
-                            "col": 1,
-                            "row": 1
-                          },
-                          "span": {
-                            "cols": 1,
-                            "rows": 1
-                          },
-                          "alignment": {
-                            "vertical": "center",
-                            "horizontal": "center"
-                          }
-                        },
-                        "xl": {
-                          "alignment": {
-                            "vertical": "start",
-                            "horizontal": "start"
-                          }
-                        }
-                      },
-                      "id": "grviqmbjhh",
-                      "padding": {
-                        "xs": {
-                          "top": 5,
-                          "left": 5,
-                          "right": 5,
-                          "bottom": 5
-                        },
-                        "md": {
-                          "top": 15,
-                          "left": 15,
-                          "right": 15,
-                          "bottom": 15
-                        }
-                      }
-                    }
-                  }
-                }
-              ],
-              "styles": {
-                "instance": {
-                  "grid": {
-                    "xs": {
-                      "rows": [
-                        "auto"
-                      ],
-                      "cols": [
-                        "1fr"
-                      ]
-                    }
-                  },
-                  "id": "nutidoheja",
-                  "size": {
-                    "sm": {
-                      "maxWidth": 540
-                    },
-                    "md": {
-                      "maxWidth": 720
-                    },
-                    "lg": {
-                      "maxWidth": 960
-                    },
-                    "xl": {
-                      "maxWidth": 1140
-                    }
-                  },
-                  "margin": {
-                    "xs": {
-                      "top": 10,
-                      "left": "auto",
-                      "right": "auto",
-                      "bottom": 10
-                    },
-                    "md": {
-                      "top": 15,
-                      "bottom": 15
-                    },
-                    "xl": {
-                      "top": 25,
-                      "bottom": 25
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "/contentTypes/url/contentItems/1bec2534-46c4-7555-f8ec-ffcd9645fc2e": {
-    "id": "/contentTypes/url/contentItems/1bec2534-46c4-7555-f8ec-ffcd9645fc2e",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "1bec2534-46c4-7555-f8ec-ffcd9645fc2e",
-    "properties": {
-      "title": "#signout",
-      "permalink": "#signout"
-    }
-  },
-  "/contentTypes/page/contentItems/f95c292b-b40b-e2cd-b5dc-71fffc97083d": {
-    "id": "/contentTypes/page/contentItems/f95c292b-b40b-e2cd-b5dc-71fffc97083d",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "f95c292b-b40b-e2cd-b5dc-71fffc97083d",
+    "name": "default",
     "properties": {
       "en_us": {
-        "title": "Errors: 404 Page not found",
-        "description": "",
-        "keywords": "",
-        "documentId": "contentTypes/document/contentItems/f95c292b-b40b-e2cd-b5dc-71fffc97083d",
-        "permalink": "/404"
+        "title": "Home",
+        "description": "Layout for the home page",
+        "permalinkTemplate": "/",
+        "documentId": "contentTypes/document/contentItems/home-page-layout"
       }
-    }
-  },
-  "/contentTypes/document/contentItems/bc0b16ea-592d-c4c2-e5b6-ccef526cf42a": {
-    "id": "/contentTypes/document/contentItems/bc0b16ea-592d-c4c2-e5b6-ccef526cf42a",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "bc0b16ea-592d-c4c2-e5b6-ccef526cf42a",
-    "properties": {
-      "nodes": [
-        {
-          "type": "layout-section",
-          "nodes": [
-            {
-              "type": "grid",
-              "nodes": [
-                {
-                  "type": "grid-cell",
-                  "nodes": [
-                    {
-                      "type": "text-block",
-                      "nodes": [
-                        {
-                          "type": "heading1",
-                          "attrs": {
-                            "id": "S6i3i"
-                          },
-                          "nodes": [
-                            {
-                              "type": "text",
-                              "text": "Reset password"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "validationSummary"
-                    },
-                    {
-                      "type": "confirmPassword"
-                    }
-                  ],
-                  "role": "article",
-                  "styles": {
-                    "instance": {
-                      "grid-cell": {
-                        "xs": {
-                          "position": {
-                            "col": 1,
-                            "row": 1
-                          },
-                          "span": {
-                            "cols": 1,
-                            "rows": 1
-                          },
-                          "alignment": {
-                            "vertical": "center",
-                            "horizontal": "center"
-                          }
-                        }
-                      },
-                      "id": "myaxhjsvdw",
-                      "padding": {
-                        "xs": {
-                          "top": 5,
-                          "left": 5,
-                          "right": 5,
-                          "bottom": 5
-                        },
-                        "md": {
-                          "top": 15,
-                          "left": 15,
-                          "right": 15,
-                          "bottom": 15
-                        }
-                      }
-                    }
-                  }
-                }
-              ],
-              "styles": {
-                "instance": {
-                  "grid": {
-                    "xs": {
-                      "rows": [
-                        "auto"
-                      ],
-                      "cols": [
-                        "1fr"
-                      ]
-                    }
-                  },
-                  "id": "cmwjhkfdnp",
-                  "size": {
-                    "sm": {
-                      "maxWidth": 540
-                    },
-                    "md": {
-                      "maxWidth": 720
-                    },
-                    "lg": {
-                      "maxWidth": 960
-                    },
-                    "xl": {
-                      "maxWidth": 1140
-                    }
-                  },
-                  "margin": {
-                    "xs": {
-                      "top": 10,
-                      "left": "auto",
-                      "right": "auto",
-                      "bottom": 10
-                    },
-                    "md": {
-                      "top": 15,
-                      "bottom": 15
-                    },
-                    "xl": {
-                      "top": 25,
-                      "bottom": 25
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "/contentTypes/page/contentItems/23cfb598-29dd-fd28-7b05-c8ffe801980c": {
-    "id": "/contentTypes/page/contentItems/23cfb598-29dd-fd28-7b05-c8ffe801980c",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "23cfb598-29dd-fd28-7b05-c8ffe801980c",
-    "properties": {
-      "en_us": {
-        "title": "Sign up with OAuth",
-        "description": "",
-        "keywords": "",
-        "documentId": "contentTypes/document/contentItems/23cfb598-29dd-fd28-7b05-c8ffe801980c",
-        "permalink": "/signup-oauth"
-      }
-    }
-  },
-  "/contentTypes/document/contentItems/23cfb598-29dd-fd28-7b05-c8ffe801980c": {
-    "id": "/contentTypes/document/contentItems/23cfb598-29dd-fd28-7b05-c8ffe801980c",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "23cfb598-29dd-fd28-7b05-c8ffe801980c",
-    "properties": {
-      "nodes": [
-        {
-          "type": "layout-section",
-          "nodes": [
-            {
-              "type": "grid",
-              "nodes": [
-                {
-                  "type": "grid-cell",
-                  "nodes": [
-                    {
-                      "type": "text-block",
-                      "nodes": [
-                        {
-                          "type": "heading1",
-                          "attrs": {
-                            "id": "ALVCQ"
-                          },
-                          "nodes": [
-                            {
-                              "type": "text",
-                              "text": "Complete sign up"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "validationSummary"
-                    },
-                    {
-                      "type": "signup-social"
-                    }
-                  ],
-                  "role": "article",
-                  "styles": {
-                    "instance": {
-                      "grid-cell": {
-                        "xs": {
-                          "position": {
-                            "col": 1,
-                            "row": 1
-                          },
-                          "span": {
-                            "cols": 1,
-                            "rows": 1
-                          },
-                          "alignment": {
-                            "vertical": "center",
-                            "horizontal": "center"
-                          }
-                        },
-                        "xl": {
-                          "alignment": {
-                            "vertical": "center",
-                            "horizontal": "start"
-                          }
-                        }
-                      },
-                      "id": "myaxhjsvdw",
-                      "padding": {
-                        "xs": {
-                          "top": 5,
-                          "left": 5,
-                          "right": 5,
-                          "bottom": 5
-                        },
-                        "md": {
-                          "top": 15,
-                          "left": 15,
-                          "right": 15,
-                          "bottom": 15
-                        }
-                      }
-                    }
-                  }
-                }
-              ],
-              "styles": {
-                "instance": {
-                  "grid": {
-                    "xs": {
-                      "rows": [
-                        "auto"
-                      ],
-                      "cols": [
-                        "1fr"
-                      ]
-                    }
-                  },
-                  "id": "cmwjhkfdnp",
-                  "size": {
-                    "sm": {
-                      "maxWidth": 540
-                    },
-                    "md": {
-                      "maxWidth": 720
-                    },
-                    "lg": {
-                      "maxWidth": 960
-                    },
-                    "xl": {
-                      "maxWidth": 1140
-                    }
-                  },
-                  "margin": {
-                    "xs": {
-                      "top": 10,
-                      "left": "auto",
-                      "right": "auto",
-                      "bottom": 10
-                    },
-                    "md": {
-                      "top": 15,
-                      "bottom": 15
-                    },
-                    "xl": {
-                      "top": 25,
-                      "bottom": 25
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "/contentTypes/document/contentItems/main-menu-popup": {
-    "id": "/contentTypes/document/contentItems/main-menu-popup",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "main-menu-popup",
-    "properties": {
-      "backdrop": true,
-      "styles": {
-        "instance": {
-          "components": {
-            "popupContainer": {
-              "default": {
-                "position": {
-                  "position": "fixed",
-                  "top": "50%",
-                  "right": 0
-                },
-                "background": {
-                  "colorId": "colors/defaultBg"
-                },
-                "transform": {
-                  "translate": {
-                    "x": "0px",
-                    "y": "calc(-50%)"
-                  }
-                },
-                "size": {
-                  "height": "100%",
-                  "minWidth": 400
-                },
-                "padding": {
-                  "top": 20,
-                  "left": 30,
-                  "right": 30,
-                  "bottom": 30
-                },
-                "container": {
-                  "alignment": {
-                    "horizontal": "start"
-                  },
-                  "overflow": {
-                    "vertical": "scroll",
-                    "horizontal": "scroll"
-                  }
-                },
-                "border": {
-                  "bottom": {
-                    "colorId": "colors/15o9C",
-                    "style": "solid",
-                    "width": "1"
-                  },
-                  "left": {
-                    "colorId": "colors/15o9C",
-                    "style": "solid",
-                    "width": "1"
-                  },
-                  "right": {
-                    "colorId": "colors/15o9C",
-                    "style": "solid",
-                    "width": "1"
-                  },
-                  "top": {
-                    "colorId": "colors/15o9C",
-                    "style": "solid",
-                    "width": "1"
-                  }
-                }
-              }
-            },
-            "popupBackdrop": {
-              "default": {
-                "background": {
-                  "colorId": "colors/dsGWq"
-                }
-              }
-            }
-          },
-          "id": "paypjjihrc"
-        }
-      },
-      "nodes": [
-        {
-          "type": "menu",
-          "navigationItemId": "main",
-          "layout": "vertical",
-          "styles": {
-            "appearance": "components/menu/default",
-            "instance": {
-              "size": {
-                "width": "100%"
-              },
-              "id": "hshpeaftpv"
-            }
-          }
-        },
-        {
-          "type": "menu",
-          "navigationItemId": "74ed66aa-1cc0-f91a-60c6-6e1b2aa239ea",
-          "layout": "vertical",
-          "styles": {
-            "appearance": "components/menu/default",
-            "instance": {
-              "size": {
-                "width": "100%"
-              },
-              "id": "ugylbhioik"
-            }
-          },
-          "security": {
-            "roles": [
-              "anonymous"
-            ]
-          }
-        },
-        {
-          "type": "menu",
-          "minHeading": null,
-          "maxHeading": null,
-          "navigationItemId": "ed7c0fc2-6fa3-2efd-4ec9-0d8feb484a12",
-          "layout": "vertical",
-          "styles": {
-            "appearance": "components/menu/default",
-            "instance": {
-              "size": {
-                "width": "100%"
-              },
-              "id": "ebhloafmvf",
-              "margin": null,
-              "padding": null
-            }
-          },
-          "security": {
-            "roles": [
-              "authenticated"
-            ]
-          }
-        },
-        {
-          "type": "dismiss-button",
-          "label": "✕",
-          "styles": {
-            "appearance": "components/button/no-border",
-            "instance": {
-              "id": "main-menu-dismiss",
-              "position": {
-                "position": "absolute",
-                "top": 0,
-                "right": 0
-              }
-            }
-          }
-        }
-      ]
-    }
-  },
-  "/contentTypes/document/contentItems/0fa17e1c-6497-f6a9-cf19-02b02b59bbf0": {
-    "id": "/contentTypes/document/contentItems/0fa17e1c-6497-f6a9-cf19-02b02b59bbf0",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "0fa17e1c-6497-f6a9-cf19-02b02b59bbf0",
-    "properties": {
-      "nodes": [
-        {
-          "type": "layout-section",
-          "nodes": [
-            {
-              "type": "grid",
-              "nodes": [
-                {
-                  "type": "grid-cell",
-                  "nodes": [
-                    {
-                      "type": "text-block",
-                      "nodes": [
-                        {
-                          "type": "heading1",
-                          "attrs": {
-                            "id": "lcnA4"
-                          },
-                          "nodes": [
-                            {
-                              "type": "text",
-                              "text": "Request password reset"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "validationSummary"
-                    },
-                    {
-                      "type": "reset-password",
-                      "requireHipCaptcha": true
-                    }
-                  ],
-                  "role": "article",
-                  "styles": {
-                    "instance": {
-                      "grid-cell": {
-                        "xs": {
-                          "position": {
-                            "col": 1,
-                            "row": 1
-                          },
-                          "span": {
-                            "cols": 1,
-                            "rows": 1
-                          },
-                          "alignment": {
-                            "vertical": "center",
-                            "horizontal": "center"
-                          }
-                        }
-                      },
-                      "id": "myaxhjsvdw",
-                      "padding": {
-                        "xs": {
-                          "top": 5,
-                          "left": 5,
-                          "right": 5,
-                          "bottom": 5
-                        },
-                        "md": {
-                          "top": 15,
-                          "left": 15,
-                          "right": 15,
-                          "bottom": 15
-                        }
-                      }
-                    }
-                  }
-                }
-              ],
-              "styles": {
-                "instance": {
-                  "grid": {
-                    "xs": {
-                      "rows": [
-                        "auto"
-                      ],
-                      "cols": [
-                        "1fr"
-                      ]
-                    }
-                  },
-                  "id": "cmwjhkfdnp",
-                  "size": {
-                    "sm": {
-                      "maxWidth": 540
-                    },
-                    "md": {
-                      "maxWidth": 720
-                    },
-                    "lg": {
-                      "maxWidth": 960
-                    },
-                    "xl": {
-                      "maxWidth": 1140
-                    }
-                  },
-                  "margin": {
-                    "xs": {
-                      "top": 10,
-                      "left": "auto",
-                      "right": "auto",
-                      "bottom": 10
-                    },
-                    "md": {
-                      "top": 15,
-                      "bottom": 15
-                    },
-                    "xl": {
-                      "top": 25,
-                      "bottom": 25
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        }
-      ]
     }
   },
   "/contentTypes/document/contentItems/default-page-layout": {
@@ -4616,18 +4533,264 @@
       ]
     }
   },
-  "/contentTypes/page/contentItems/085eb170-7cd7-476f-da11-85b04e265b84": {
-    "id": "/contentTypes/page/contentItems/085eb170-7cd7-476f-da11-85b04e265b84",
+  "/contentTypes/page/contentItems/e0987ca1-f458-b546-7697-7be594b35583": {
+    "id": "/contentTypes/page/contentItems/e0987ca1-f458-b546-7697-7be594b35583",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "085eb170-7cd7-476f-da11-85b04e265b84",
+    "name": "e0987ca1-f458-b546-7697-7be594b35583",
     "properties": {
       "en_us": {
-        "title": "Products: Details",
+        "title": "Home",
         "description": "",
         "keywords": "",
-        "documentId": "contentTypes/document/contentItems/085eb170-7cd7-476f-da11-85b04e265b84",
-        "permalink": "/product"
+        "permalink": "/",
+        "documentId": "contentTypes/document/contentItems/e0987ca1-f458-b546-7697-7be594b35583"
       }
+    }
+  },
+  "/contentTypes/url/contentItems/db6d0be2-ec1a-2850-6476-ff53b65b00b9": {
+    "id": "/contentTypes/url/contentItems/db6d0be2-ec1a-2850-6476-ff53b65b00b9",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "db6d0be2-ec1a-2850-6476-ff53b65b00b9",
+    "properties": {
+      "title": "APIs",
+      "description": "",
+      "permalink": "/apis"
+    }
+  },
+  "/contentTypes/layout/contentItems/default-page-layout": {
+    "id": "/contentTypes/layout/contentItems/default-page-layout",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "default-page-layout",
+    "properties": {
+      "en_us": {
+        "title": "Default",
+        "description": "",
+        "documentId": "contentTypes/document/contentItems/default-page-layout",
+        "permalinkTemplate": "/*"
+      }
+    }
+  },
+  "/contentTypes/document/contentItems/1b2a9e4c-d53b-99d1-e363-348630d982b5": {
+    "id": "/contentTypes/document/contentItems/1b2a9e4c-d53b-99d1-e363-348630d982b5",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "1b2a9e4c-d53b-99d1-e363-348630d982b5",
+    "properties": {
+      "nodes": [
+        {
+          "type": "layout-section",
+          "nodes": [
+            {
+              "type": "grid",
+              "nodes": [
+                {
+                  "type": "grid-cell",
+                  "nodes": [
+                    {
+                      "type": "listOfApis",
+                      "itemStyleView": "dropdown",
+                      "allowSelection": true,
+                      "showApiType": true,
+                      "defaultGroupByTagToEnabled": false,
+                      "detailsPageHyperlink": null
+                    },
+                    {
+                      "type": "operationList",
+                      "allowSelection": true,
+                      "defaultGroupByTagToEnabled": false,
+                      "detailsPageHyperlink": null
+                    }
+                  ],
+                  "role": "navigation",
+                  "styles": {
+                    "instance": {
+                      "grid-cell": {
+                        "md": {
+                          "position": {
+                            "col": 1,
+                            "row": 1
+                          },
+                          "span": {
+                            "cols": 1,
+                            "rows": 1
+                          },
+                          "alignment": {
+                            "vertical": "center",
+                            "horizontal": "center"
+                          }
+                        },
+                        "xs": {
+                          "position": {
+                            "col": 1,
+                            "row": 1
+                          },
+                          "span": {
+                            "cols": 1,
+                            "rows": 1
+                          },
+                          "alignment": {
+                            "vertical": "center",
+                            "horizontal": "center"
+                          }
+                        },
+                        "xl": {
+                          "alignment": {
+                            "vertical": "start",
+                            "horizontal": "start"
+                          }
+                        }
+                      },
+                      "id": "ijdrsuhpjk",
+                      "padding": {
+                        "xs": {
+                          "top": 5,
+                          "left": 5,
+                          "right": 5,
+                          "bottom": 5
+                        },
+                        "md": {
+                          "top": 15,
+                          "left": 15,
+                          "right": 15,
+                          "bottom": 15
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "grid-cell",
+                  "nodes": [
+                    {
+                      "type": "detailsOfApi",
+                      "changeLogPageHyperlink": {
+                        "target": "_self",
+                        "targetId": "contentTypes/page/contentItems/933ce351-2259-d7b7-3f4f-5c33f3ad328a"
+                      }
+                    },
+                    {
+                      "type": "operationDetails",
+                      "enableConsole": true,
+                      "enableScrollTo": false,
+                      "defaultSchemaView": "table"
+                    }
+                  ],
+                  "role": "article",
+                  "styles": {
+                    "instance": {
+                      "grid-cell": {
+                        "md": {
+                          "position": {
+                            "col": 2,
+                            "row": 1
+                          },
+                          "span": {
+                            "cols": 1,
+                            "rows": 1
+                          },
+                          "alignment": {
+                            "vertical": "center",
+                            "horizontal": "center"
+                          }
+                        },
+                        "xs": {
+                          "position": {
+                            "col": 1,
+                            "row": 2
+                          },
+                          "span": {
+                            "cols": 1,
+                            "rows": 1
+                          },
+                          "alignment": {
+                            "vertical": "center",
+                            "horizontal": "center"
+                          }
+                        },
+                        "xl": {
+                          "alignment": {
+                            "vertical": "start",
+                            "horizontal": "start"
+                          }
+                        }
+                      },
+                      "id": "ycqdvmhchp",
+                      "padding": {
+                        "xs": {
+                          "top": 5,
+                          "left": 5,
+                          "right": 5,
+                          "bottom": 5
+                        },
+                        "md": {
+                          "top": 15,
+                          "left": 15,
+                          "right": 15,
+                          "bottom": 15
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "styles": {
+                "instance": {
+                  "grid": {
+                    "md": {
+                      "rows": [
+                        "auto"
+                      ],
+                      "cols": [
+                        "1fr",
+                        "3fr"
+                      ]
+                    },
+                    "xs": {
+                      "rows": [
+                        "auto",
+                        "auto"
+                      ],
+                      "cols": [
+                        "1fr"
+                      ]
+                    }
+                  },
+                  "id": "huzbxuibav",
+                  "size": {
+                    "sm": {
+                      "maxWidth": 540
+                    },
+                    "md": {
+                      "maxWidth": 720
+                    },
+                    "lg": {
+                      "maxWidth": 960
+                    },
+                    "xl": {
+                      "maxWidth": "1800"
+                    }
+                  },
+                  "margin": {
+                    "xs": {
+                      "top": 10,
+                      "left": "auto",
+                      "right": "auto",
+                      "bottom": 10
+                    },
+                    "md": {
+                      "top": 15,
+                      "bottom": 15
+                    },
+                    "xl": {
+                      "top": 25,
+                      "bottom": 25
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "/contentTypes/document/contentItems/e0987ca1-f458-b546-7697-7be594b35583": {
@@ -4683,7 +4846,7 @@
                           "nodes": [
                             {
                               "type": "text",
-                              "text": "Welcome to Contoso33!",
+                              "text": "Welcome to Contoso44!",
                               "marks": [
                                 {
                                   "type": "color",
@@ -5870,7 +6033,6 @@
                                   "xl": "utils/text/alignCenter"
                                 }
                               },
-                              "identifier": null,
                               "nodes": [
                                 {
                                   "type": "text",
@@ -5885,7 +6047,6 @@
                                   "xl": "utils/text/alignCenter"
                                 }
                               },
-                              "identifier": null,
                               "nodes": [
                                 {
                                   "type": "text",
@@ -5954,9 +6115,13 @@
                           "width": 300,
                           "height": 200,
                           "styles": {
-                            "appearance": "components/picture/default"
+                            "appearance": "components/picture/default",
+                            "instance": {
+                              "margin": null,
+                              "id": "erpbzsubbq"
+                            }
                           },
-                          "sourceId": "contentTypes/blob/contentItems/ed8e43d0-5f8e-af38-5536-8f0274656ce4"
+                          "sourceId": "contentTypes/blob/contentItems/3a78b145-fd4e-b475-6a7f-4d039cf91d76"
                         },
                         {
                           "type": "text-block",
@@ -5972,12 +6137,14 @@
                               "nodes": [
                                 {
                                   "type": "text",
-                                  "text": "Contoso API 3"
+                                  "text": "New Diagram"
                                 }
                               ]
                             },
                             {
                               "type": "paragraph",
+                              "styles": null,
+                              "identifier": null,
                               "nodes": [
                                 {
                                   "type": "text",
@@ -5992,6 +6159,7 @@
                                   "xl": "utils/text/alignCenter"
                                 }
                               },
+                              "identifier": null,
                               "nodes": [
                                 {
                                   "type": "text",
@@ -6744,37 +6912,10 @@
       ]
     }
   },
-  "/contentTypes/page/contentItems/1b2a9e4c-d53b-99d1-e363-348630d982b5": {
-    "id": "/contentTypes/page/contentItems/1b2a9e4c-d53b-99d1-e363-348630d982b5",
+  "/contentTypes/document/contentItems/0fa17e1c-6497-f6a9-cf19-02b02b59bbf0": {
+    "id": "/contentTypes/document/contentItems/0fa17e1c-6497-f6a9-cf19-02b02b59bbf0",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "1b2a9e4c-d53b-99d1-e363-348630d982b5",
-    "properties": {
-      "en_us": {
-        "title": "APIs: Details",
-        "description": "",
-        "keywords": "",
-        "documentId": "contentTypes/document/contentItems/1b2a9e4c-d53b-99d1-e363-348630d982b5",
-        "permalink": "/api-details"
-      }
-    }
-  },
-  "/contentTypes/blob/contentItems/6950c674-1aeb-0171-b4a4-ce227104fdfb": {
-    "id": "/contentTypes/blob/contentItems/6950c674-1aeb-0171-b4a4-ce227104fdfb",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "6950c674-1aeb-0171-b4a4-ce227104fdfb",
-    "properties": {
-      "fileName": "Screenshot 2024-04-30 at 11.07.41 AM.png",
-      "blobId": "6950c674-1aeb-0171-b4a4-ce227104fdfb",
-      "description": "",
-      "keywords": "",
-      "permalink": "/content/Screenshot 2024-04-30 at 11.07.41 AM.png",
-      "mimeType": "image/png"
-    }
-  },
-  "/contentTypes/document/contentItems/933ce351-2259-d7b7-3f4f-5c33f3ad328a": {
-    "id": "/contentTypes/document/contentItems/933ce351-2259-d7b7-3f4f-5c33f3ad328a",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "933ce351-2259-d7b7-3f4f-5c33f3ad328a",
+    "name": "0fa17e1c-6497-f6a9-cf19-02b02b59bbf0",
     "properties": {
       "nodes": [
         {
@@ -6792,23 +6933,23 @@
                         {
                           "type": "heading1",
                           "attrs": {
-                            "id": "GvmaU"
+                            "id": "lcnA4"
                           },
                           "nodes": [
                             {
                               "type": "text",
-                              "text": "API changelog"
+                              "text": "Request password reset"
                             }
                           ]
                         }
                       ]
                     },
                     {
-                      "type": "historyOfApi",
-                      "detailsPageHyperlink": {
-                        "target": "_self",
-                        "targetId": "contentTypes/page/contentItems/1b2a9e4c-d53b-99d1-e363-348630d982b5"
-                      }
+                      "type": "validationSummary"
+                    },
+                    {
+                      "type": "reset-password",
+                      "requireHipCaptcha": true
                     }
                   ],
                   "role": "article",
@@ -6827,12 +6968,6 @@
                           "alignment": {
                             "vertical": "center",
                             "horizontal": "center"
-                          }
-                        },
-                        "xl": {
-                          "alignment": {
-                            "vertical": "start",
-                            "horizontal": "start"
                           }
                         }
                       },
@@ -6906,118 +7041,29 @@
       ]
     }
   },
-  "/contentTypes/page/contentItems/bc0b16ea-592d-c4c2-e5b6-ccef526cf42a": {
-    "id": "/contentTypes/page/contentItems/bc0b16ea-592d-c4c2-e5b6-ccef526cf42a",
+  "/contentTypes/blob/contentItems/09879768-b2c8-afbd-a945-934c046b3c2d": {
+    "id": "/contentTypes/blob/contentItems/09879768-b2c8-afbd-a945-934c046b3c2d",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "bc0b16ea-592d-c4c2-e5b6-ccef526cf42a",
+    "name": "09879768-b2c8-afbd-a945-934c046b3c2d",
     "properties": {
-      "en_us": {
-        "title": "Confirm password",
-        "description": "",
-        "keywords": "",
-        "documentId": "contentTypes/document/contentItems/bc0b16ea-592d-c4c2-e5b6-ccef526cf42a",
-        "permalink": "/confirm-password"
-      }
+      "blobId": "",
+      "fileName": "hero-gradient.jpg",
+      "description": "",
+      "keywords": "",
+      "downloadUrl": "https://apimdeveloperportal.blob.core.windows.net/content/09879768-b2c8-afbd-a945-934c046b3c2d",
+      "permalink": "/content/hero-gradient.jpg",
+      "mimeType": "image/jpeg"
     }
   },
-  "/contentTypes/document/contentItems/navigation": {
-    "id": "/contentTypes/document/contentItems/navigation",
+  "/contentTypes/block/contentItems/new-page-template": {
+    "id": "/contentTypes/block/contentItems/new-page-template",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "navigation",
-    "properties": {
-      "nodes": [
-        {
-          "id": "main",
-          "label": "Main menu",
-          "navigationItems": [
-            {
-              "id": "0901ccd9-9c01-8a2b-5d86-7edd429f3a9a",
-              "label": "Home",
-              "targetId": "contentTypes/page/contentItems/e0987ca1-f458-b546-7697-7be594b35583",
-              "navigationItems": null
-            },
-            {
-              "id": "32fea618-15ed-f8ab-e3fa-ec71a144632f",
-              "label": "APIs",
-              "targetId": "contentTypes/page/contentItems/38b4a583-e611-dbf8-b945-a2d591c61614",
-              "navigationItems": null
-            },
-            {
-              "id": "775bc451-92f1-8463-f06c-0251fc529bd9",
-              "label": "Products",
-              "targetId": "contentTypes/page/contentItems/9862f795-6e36-217e-6dc7-cf7226591267",
-              "navigationItems": null
-            }
-          ]
-        },
-        {
-          "id": "ed7c0fc2-6fa3-2efd-4ec9-0d8feb484a12",
-          "label": "Authenticated user menu",
-          "navigationItems": [
-            {
-              "id": "bb3147e0-0123-0471-2754-79bd90622f46",
-              "label": "Reports",
-              "targetId": "contentTypes/page/contentItems/89bb02ae-194e-828f-d595-df5675f5e6d1",
-              "navigationItems": null
-            },
-            {
-              "id": "c4bc59d2-e97d-d5d3-bfa0-d3f667310f35",
-              "label": "Profile",
-              "targetId": "contentTypes/page/contentItems/4e3cf6a5-574a-ba08-1f23-2e7a38faa6d8",
-              "navigationItems": null
-            },
-            {
-              "id": "ef72a776-6915-42c4-ade1-5385fd8404b7",
-              "label": "Sign out",
-              "targetId": "contentTypes/url/contentItems/1bec2534-46c4-7555-f8ec-ffcd9645fc2e",
-              "navigationItems": null
-            }
-          ]
-        },
-        {
-          "id": "74ed66aa-1cc0-f91a-60c6-6e1b2aa239ea",
-          "label": "Anonymous user menu",
-          "navigationItems": [
-            {
-              "id": "754349ff-01fd-2e38-c883-145f47fa8f34",
-              "label": "Sign in",
-              "targetId": "contentTypes/page/contentItems/81b0cd55-fb1a-12ee-e41a-d2d6b851ac60",
-              "navigationItems": null
-            },
-            {
-              "id": "d1f8a15c-2946-b504-cee1-4f29d5300082",
-              "label": "Sign up",
-              "targetId": "contentTypes/page/contentItems/0145411a-2c82-325a-4390-76cff184530b",
-              "navigationItems": null
-            }
-          ]
-        },
-        {
-          "id": "e4c00a1d-13ee-c080-8583-bfd496298f33",
-          "label": "Home page - sign up",
-          "navigationItems": [
-            {
-              "id": "d973fd56-14ae-61d5-6d34-bdd4344890f6",
-              "label": "Sign up",
-              "targetId": "contentTypes/page/contentItems/0145411a-2c82-325a-4390-76cff184530b",
-              "navigationItems": null
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "/contentTypes/page/contentItems/933ce351-2259-d7b7-3f4f-5c33f3ad328a": {
-    "id": "/contentTypes/page/contentItems/933ce351-2259-d7b7-3f4f-5c33f3ad328a",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "933ce351-2259-d7b7-3f4f-5c33f3ad328a",
+    "name": "new-page-template",
     "properties": {
       "en_us": {
-        "title": "APIs: Changelog",
+        "title": "New page template",
         "description": "",
-        "keywords": "",
-        "documentId": "contentTypes/document/contentItems/933ce351-2259-d7b7-3f4f-5c33f3ad328a",
-        "permalink": "/api-changelog"
+        "documentId": "/contentTypes/document/contentItems/new-page-template"
       }
     }
   },
@@ -7360,28 +7406,38 @@
       ]
     }
   },
-  "/contentTypes/document/contentItems/configuration": {
-    "id": "/contentTypes/document/contentItems/configuration",
+  "/contentTypes/page/contentItems/085eb170-7cd7-476f-da11-85b04e265b84": {
+    "id": "/contentTypes/page/contentItems/085eb170-7cd7-476f-da11-85b04e265b84",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "configuration",
+    "name": "085eb170-7cd7-476f-da11-85b04e265b84",
     "properties": {
-      "nodes": [
-        {
-          "site": {
-            "title": "Microsoft Azure API Management - developer portal",
-            "description": "Discover APIs, learn how to use them, try them out interactively, and sign up to acquire keys.",
-            "keywords": "Azure, API Management, API, developer",
-            "faviconSourceId": null,
-            "author": "Microsoft Azure API Management"
-          }
-        }
-      ]
+      "en_us": {
+        "title": "Products: Details",
+        "description": "",
+        "keywords": "",
+        "documentId": "contentTypes/document/contentItems/085eb170-7cd7-476f-da11-85b04e265b84",
+        "permalink": "/product"
+      }
     }
   },
-  "/contentTypes/document/contentItems/38b4a583-e611-dbf8-b945-a2d591c61614": {
-    "id": "/contentTypes/document/contentItems/38b4a583-e611-dbf8-b945-a2d591c61614",
+  "/contentTypes/page/contentItems/3bc2e097-114e-cd8d-dc51-4139bcbdb8c0": {
+    "id": "/contentTypes/page/contentItems/3bc2e097-114e-cd8d-dc51-4139bcbdb8c0",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "38b4a583-e611-dbf8-b945-a2d591c61614",
+    "name": "3bc2e097-114e-cd8d-dc51-4139bcbdb8c0",
+    "properties": {
+      "en_us": {
+        "title": "Errors: 500 Internal error",
+        "description": "",
+        "keywords": "",
+        "documentId": "contentTypes/document/contentItems/3bc2e097-114e-cd8d-dc51-4139bcbdb8c0",
+        "permalink": "/500"
+      }
+    }
+  },
+  "/contentTypes/document/contentItems/new-page-template": {
+    "id": "/contentTypes/document/contentItems/new-page-template",
+    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
+    "name": "new-page-template",
     "properties": {
       "nodes": [
         {
@@ -7398,24 +7454,23 @@
                       "nodes": [
                         {
                           "type": "heading1",
-                          "identifier": "6YERT",
                           "nodes": [
                             {
                               "type": "text",
-                              "text": "APIs"
+                              "text": "Heading 1"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "paragraph",
+                          "nodes": [
+                            {
+                              "type": "text",
+                              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                             }
                           ]
                         }
                       ]
-                    },
-                    {
-                      "type": "listOfApis",
-                      "itemStyleView": "list",
-                      "showApiType": true,
-                      "defaultGroupByTagToEnabled": false,
-                      "detailsPageHyperlink": {
-                        "targetId": "contentTypes/page/contentItems/1b2a9e4c-d53b-99d1-e363-348630d982b5"
-                      }
                     }
                   ],
                   "role": "article",
@@ -7437,7 +7492,7 @@
                           }
                         }
                       },
-                      "id": "cbtmarloqy",
+                      "id": "myaxhjsvdw",
                       "padding": {
                         "xs": {
                           "top": 5,
@@ -7468,7 +7523,7 @@
                       ]
                     }
                   },
-                  "id": "eehtgpxfrf",
+                  "id": "cmwjhkfdnp",
                   "size": {
                     "sm": {
                       "maxWidth": 540
@@ -7507,42 +7562,31 @@
       ]
     }
   },
-  "/contentTypes/blob/contentItems/c5d2da83-b255-245c-144b-cd3c242e9791": {
-    "id": "/contentTypes/blob/contentItems/c5d2da83-b255-245c-144b-cd3c242e9791",
+  "/contentTypes/blob/contentItems/70add409-0933-e01e-acef-99999a71167e": {
+    "id": "/contentTypes/blob/contentItems/70add409-0933-e01e-acef-99999a71167e",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "c5d2da83-b255-245c-144b-cd3c242e9791",
+    "name": "70add409-0933-e01e-acef-99999a71167e",
     "properties": {
       "blobId": "",
-      "fileName": "featured-1.jpg",
+      "fileName": "logo-contoso-small.png",
       "description": "",
       "keywords": "",
-      "downloadUrl": "https://apimdeveloperportal.blob.core.windows.net/content/c5d2da83-b255-245c-144b-cd3c242e9791",
-      "permalink": "/content/featured-1.jpg",
-      "mimeType": "image/jpeg"
+      "downloadUrl": "https://apimdeveloperportal.blob.core.windows.net/content/70add409-0933-e01e-acef-99999a71167e",
+      "permalink": "/content/logo-contoso-small.png",
+      "mimeType": "image/png"
     }
   },
-  "/contentTypes/layout/contentItems/default": {
-    "id": "/contentTypes/layout/contentItems/default",
+  "/contentTypes/page/contentItems/81b0cd55-fb1a-12ee-e41a-d2d6b851ac60": {
+    "id": "/contentTypes/page/contentItems/81b0cd55-fb1a-12ee-e41a-d2d6b851ac60",
     "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "default",
+    "name": "81b0cd55-fb1a-12ee-e41a-d2d6b851ac60",
     "properties": {
       "en_us": {
-        "title": "Home",
-        "description": "Layout for the home page",
-        "permalinkTemplate": "/",
-        "documentId": "contentTypes/document/contentItems/home-page-layout"
-      }
-    }
-  },
-  "/contentTypes/block/contentItems/new-page-template": {
-    "id": "/contentTypes/block/contentItems/new-page-template",
-    "type": "Microsoft.ApiManagement/service/contentTypes/contentItems",
-    "name": "new-page-template",
-    "properties": {
-      "en_us": {
-        "title": "New page template",
+        "title": "Sign in",
         "description": "",
-        "documentId": "/contentTypes/document/contentItems/new-page-template"
+        "keywords": "",
+        "documentId": "contentTypes/document/contentItems/81b0cd55-fb1a-12ee-e41a-d2d6b851ac60",
+        "permalink": "/signin"
       }
     }
   }
