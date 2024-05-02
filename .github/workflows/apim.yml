@@ -1,5 +1,12 @@
 name: Extract and Commit Customizations
 
+env:
+  clientId: ${{ secrets.APIMAUTOMATIONIDENTITYCLIENTID }}
+  password: ${{ secrets.APIMAUTOMATIONIDENTITYCLIENTSECRET }}
+  tenant: ${{ secrets.APIMAUTOMATIONIDENTITYTENANTID }}
+  apimName: ${{ secrets.APIMNAMEDEV }}
+  resourceGroup: ${{ secrets.RESOURCEGROUPNAMEDEV }}
+
 on:
   workflow_dispatch:
     inputs:
@@ -10,31 +17,38 @@ on:
 
 jobs:
   extract_and_commit:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
+      - name: Setup PowerShell
+        uses: actions/setup-powershell@v2
+
       - name: Extract APIM Customizations
         run: |
-          # Add your PowerShell script path here to extract customizations
-          ./Export-APIMDeveloperPortal.ps1
-        shell: pwsh
+          pwsh -Command "./Export-APIMDeveloperPortal.ps1 -ClientId '${{ env.clientId }}' -ClientSecret '${{ env.password }}' -TenantId '${{ env.tenant }}' -ApimName '${{ env.apimName }}' -ResourceGroup '${{ env.resourceGroup }}'"
+        shell: bash
 
       - name: Configure Git
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
 
       - name: Create New Branch
-        run: git checkout -b ${{ github.event.inputs.branch_name }}
+        run: |
+          git fetch
+          git checkout -b ${{ github.event.inputs.branch_name }}
 
       - name: Commit changes
         run: |
           git add .
           git commit -m "Extracted APIM customizations"
-          git push origin ${{ github.event.inputs.branch_name }}
-        shell: pwsh
-
+          if [ "$(git status --porcelain)" != "" ]; then
+            git push origin ${{ github.event.inputs.branch_name }}
+          else
+            echo "No changes to commit."
+          fi
+        shell: bash
