@@ -12,8 +12,8 @@ on:
     inputs:
       branch_name:
         description: 'Branch name to commit changes'
-        required: true
-        default: 'feature/update-${{ github.run_number }}'
+        required: false
+        default: 'feature/update'
 
 jobs:
   extract_and_commit:
@@ -29,7 +29,7 @@ jobs:
 
       - name: Extract APIM Customizations
         run: |
-          pwsh -Command "./Export-APIMDeveloperPortal.ps1 -ExportFolder Export -AppId '${{ env.clientId }}' -Secret '${{ env.password }}' -Tenant '${{ env.tenant }}' -APIMName '${{ env.apimName }}' -ResourceGroupName '${{ env.resourceGroup }}'"
+          pwsh -Command "./Export-APIMDeveloperPortal.ps1 -ClientId '${{ env.clientId }}' -ClientSecret '${{ env.password }}' -TenantId '${{ env.tenant }}' -ApimName '${{ env.apimName }}' -ResourceGroup '${{ env.resourceGroup }}'"
         shell: bash
 
       - name: Configure Git
@@ -37,17 +37,24 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
+      - name: Determine Branch Name
+        id: branch
+        run: |
+          BRANCH_NAME="${{ github.event.inputs.branch_name }}-${{ github.run_number }}"
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+          echo "::set-output name=branch_name::$BRANCH_NAME"
+
       - name: Create New Branch
         run: |
           git fetch
-          git checkout -b ${{ github.event.inputs.branch_name }}
+          git checkout -b ${{ steps.branch.outputs.branch_name }}
 
       - name: Commit changes
         run: |
           git add .
           git commit -m "Extracted APIM customizations"
           if [ "$(git status --porcelain)" != "" ]; then
-            git push origin ${{ github.event.inputs.branch_name }}
+            git push origin ${{ steps.branch.outputs.branch_name }}
           else
             echo "No changes to commit."
           fi
