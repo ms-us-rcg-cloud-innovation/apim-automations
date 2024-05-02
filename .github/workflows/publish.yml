@@ -3,7 +3,7 @@ name: Publish APIM Developer Portal Content
 on:
   push:
     branches:
-      - 'feature/*'  # Adjust the branch pattern as necessary
+      - 'feature/*'  # This should trigger the workflow when any branch matching the pattern is pushed.
 
 jobs:
   import_apim_content:
@@ -12,22 +12,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 0  # Ensures we fetch all history for all branches and tags.
+
+      - name: Setup PowerShell
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y powershell
+        shell: bash
+
+      - name: Install Azure PowerShell module
+        run: |
+          pwsh -Command "Install-Module -Name Az -AllowClobber -Scope CurrentUser -Force"
+        shell: pwsh
 
       - name: Copy Export to Publish
         run: |
           mkdir -p Publish
           cp -r Export/* Publish/
         shell: bash
-
-      - name: Setup PowerShell
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y powershell
-
-      - name: Install Azure PowerShell module
-        run: |
-          pwsh -Command "Install-Module -Name Az -AllowClobber -Scope CurrentUser -Force"
 
       - name: Execute Import PowerShell Script
         run: |
