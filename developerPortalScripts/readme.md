@@ -6,10 +6,10 @@ This project includes scripts and workflows for extracting and publishing Azure 
 ## GitHub Workflows
 
 ### Extract Workflow
-The [extract workflow](.github/workflows/extract.yml) is triggered manually from the GitHub Actions UI. It extracts the Azure API Management Developer Portal content and commits the changes to a new branch. The workflow uses the `extractDeveloperPortal.ps1` PowerShell script.
+The [extract workflow](../.github/workflows/extract.yml) is triggered manually from the GitHub Actions UI. It extracts the Azure API Management Developer Portal content and commits the changes to a new branch. The workflow uses the `extractDeveloperPortal.ps1` PowerShell script.
 
 ### Publish Workflow
-The [publish workflow](.github/workflows/publish.yml) is triggered on a push to the `main` branch. It copies the extracted content to a publish directory and then publishes the content using the `publishDeveloperPortal.ps1` PowerShell script.
+The [publish workflow](../.github/workflows/publish.yml) is triggered on a push to the `main` branch. It copies the extracted content to a publish directory and then publishes the content using the `publishDeveloperPortal.ps1` PowerShell script.
 
 ## PowerShell Scripts
 
