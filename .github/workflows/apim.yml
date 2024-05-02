@@ -24,13 +24,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup PowerShell
-        uses: actions/setup-powershell@v2
-
       - name: Extract APIM Customizations
         run: |
           pwsh -Command "./Export-APIMDeveloperPortal.ps1 -ClientId '${{ env.clientId }}' -ClientSecret '${{ env.password }}' -TenantId '${{ env.tenant }}' -ApimName '${{ env.apimName }}' -ResourceGroup '${{ env.resourceGroup }}'"
-        shell: bash
+        shell: pwsh
 
       - name: Configure Git
         run: |
@@ -58,4 +55,4 @@ jobs:
           else
             echo "No changes to commit."
           fi
-        shell: bash
+        shell: pwsh
