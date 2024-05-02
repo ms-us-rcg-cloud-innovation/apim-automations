@@ -33,5 +33,5 @@ jobs:
 
       - name: Execute Import PowerShell Script
         run: |
-          pwsh -Command "./Import-APIMDeveloperPortal.ps1 -RESOURCEGROUPNAMEPROD '${{ secrets.RESOURCEGROUPNAMEDEV }}' -APIMNAMEPROD '${{ secrets.APIMNAMEDEV }}' -ImportFolder './Publish' -AppId '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTID }}' -Secret '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTSECRET }}' -Tenant '${{ secrets.APIMAUTOMATIONIDENTITYTENANTID }}'"
+          pwsh -Command "./Import-APIMDeveloperPortal.ps1 -ResourceGroupName '${{ secrets.RESOURCEGROUPNAMEPROD }}' -APIMName '${{ secrets.APIMNAMEPROD }}' -ImportFolder './Publish' -AppId '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTID }}' -Secret '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTSECRET }}' -Tenant '${{ secrets.APIMAUTOMATIONIDENTITYTENANTID }}'"
         shell: pwsh
