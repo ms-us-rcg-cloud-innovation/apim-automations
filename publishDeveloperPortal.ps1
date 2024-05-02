@@ -18,6 +18,7 @@ Param (
     [string] $Tenant
 )
 
+# Using App Registration to access the API Management
 $SecurePassword = ConvertTo-SecureString -String $Secret -AsPlainText -Force
 $TenantId = $Tenant
 $ApplicationId = $AppId
@@ -57,10 +58,10 @@ if ($null -ne $apiManagement.DeveloperPortalHostnameConfiguration) {
     $developerPortalEndpoint
 }
 
-$ctx = Get-AzContext
-$ctx.Subscription.Id
+$context = Get-AzContext
+$context.Subscription.Id
 
-$baseUri = "subscriptions/$($ctx.Subscription.Id)/resourceGroups/$ResourceGroupName/providers/Microsoft.ApiManagement/service/$APIMName"
+$baseUri = "subscriptions/$($context.Subscription.Id)/resourceGroups/$ResourceGroupName/providers/Microsoft.ApiManagement/service/$APIMName"
 $baseUri
 
 "Processing clean up of the target content"

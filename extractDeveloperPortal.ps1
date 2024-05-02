@@ -1,12 +1,12 @@
 Param (
-    [Parameter(Mandatory = $true, HelpMessage = "Resource group of API MAnagement")] 
+    [Parameter(Mandatory = $true, HelpMessage = "RG Name")] 
     [string] $ResourceGroupName,
 
-    [Parameter(Mandatory = $true, HelpMessage = "API Management Name")] 
+    [Parameter(Mandatory = $true, HelpMessage = "APIM Name")] 
     [string] $APIMName,
 
-    [Parameter(HelpMessage = "Export folder")] 
-    [string] $ExportFolder = "$PSScriptRoot\Export",
+    [Parameter(HelpMessage = "Extract folder")] 
+    [string] $ExportFolder = "$PSScriptRoot\Extract",
 
     [Parameter(HelpMessage = "AppId")] 
     [string] $AppId,
@@ -18,6 +18,7 @@ Param (
     [string] $Tenant
 )
 
+# Using App Registration to access the API Management
 $SecurePassword = ConvertTo-SecureString -String $Secret -AsPlainText -Force
 $TenantId = $Tenant
 $ApplicationId = $AppId
@@ -32,9 +33,9 @@ $mediaFolder = Join-Path -Path $ExportFolder -ChildPath "Media"
 New-Item -ItemType "Directory" -Path $ExportFolder -Force
 New-Item -ItemType "Directory" -Path $mediaFolder -Force
 
-$ctx = Get-AzContext
-$ctx.Subscription.Id
-$baseUri = "subscriptions/$($ctx.Subscription.Id)/resourceGroups/$ResourceGroupName/providers/Microsoft.ApiManagement/service/$APIMName"
+$context = Get-AzContext
+$context.Subscription.Id
+$baseUri = "subscriptions/$($context.Subscription.Id)/resourceGroups/$ResourceGroupName/providers/Microsoft.ApiManagement/service/$APIMName"
 $baseUri
 
 $contentItems = @{ }

@@ -1,11 +1,4 @@
-name: Extract and Commit Customizations 
-
-env:
-  clientId: ${{ secrets.APIMAUTOMATIONIDENTITYCLIENTID }}
-  password: ${{ secrets.APIMAUTOMATIONIDENTITYCLIENTSECRET }}
-  tenant: ${{ secrets.APIMAUTOMATIONIDENTITYTENANTID }}
-  apimName: ${{ secrets.APIMNAMEDEV }}
-  resourceGroup: ${{ secrets.RESOURCEGROUPNAMEDEV }}
+name: Extract APIM Developer Portal Content
 
 on:
   workflow_dispatch:
@@ -35,7 +28,7 @@ jobs:
 
       - name: Extract APIM Customizations
         run: |
-          pwsh -Command "./Export-APIMDeveloperPortal.ps1 -ExportFolder 'Export' -AppId '${{ env.clientId }}' -Secret '${{ env.password }}' -Tenant '${{ env.tenant }}' -APIMName '${{ env.apimName }}' -ResourceGroupName '${{ env.resourceGroup }}'"
+          pwsh -Command "./extractDeveloperPortal.ps1 -ExportFolder 'Export' -AppId '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTID }}' -Secret '${{ secrets.APIMAUTOMATIONIDENTITYCLIENTSECRET }}' -Tenant '${{ secrets.APIMAUTOMATIONIDENTITYTENANTID }}' -APIMName '${{ secrets.APIMNAMEDEV }}' -ResourceGroupName '${{ secrets.RESOURCEGROUPNAMEDEV }}'"
         shell: pwsh
 
       - name: Configure Git
