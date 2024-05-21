@@ -30,7 +30,7 @@ on:
         required: true
         type: choice
         options:
-          - Extract All APIs
+          - ExtractAllAPIs
           - apisTeam1
           - apisTeam2
           - apisTeam3
@@ -57,7 +57,7 @@ jobs:
   APIM-extract-apis-without-config:
     runs-on: ubuntu-latest
     environment: ${{ inputs.environment }}
-    if: ${{ github.event.inputs.CONFIGURATION_YAML_PATH == 'Extract All APIs' }}
+    if: ${{ github.event.inputs.CONFIGURATION_YAML_PATH == 'ExtractAllAPIs' }}
     env:
       AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
       AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
@@ -129,7 +129,7 @@ jobs:
   APIM-extract-apis-with-config:
     runs-on: ubuntu-latest
     environment: ${{ inputs.environment }}
-    if: ${{ github.event.inputs.CONFIGURATION_YAML_PATH != 'Extract All APIs' }}
+    if: ${{ github.event.inputs.CONFIGURATION_YAML_PATH != 'ExtractAllAPIs' }}
     env:
       AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
       AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
