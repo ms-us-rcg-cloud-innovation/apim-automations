@@ -1,5 +1,0 @@
-
-
-https://management.azure.com/subscriptions/07a0904d-a5d1-4225-9425-271c26419878/resourceGroups/APIM-Testing/providers/Microsoft.ApiManagement/service/apimArekTest2/apis?api-version=2022-08-01
-
-https://management.azure.com/subscriptions/07a0904d-a5d1-4225-9425-271c26419878/resourceGroups/APIM-Testing/providers/Microsoft.ApiManagement/service/apimArekTest2/apis/{apiId}/operations?api-version=2022-08-01
