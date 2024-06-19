@@ -96,4 +96,4 @@ def apim_api_details(req: func.HttpRequest) -> func.HttpResponse:
     )
 
 
-# To test or deploy, ensure you set up the required environment variables or configurations.
+# To test or deploy, ensure you set up the required environment variables, configurations and managed identities.
