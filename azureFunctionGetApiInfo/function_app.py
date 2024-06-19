@@ -11,7 +11,13 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 # Define your credentials and set up the authorization header
 def get_azure_credentials():
 
-
+# if using a service principal, provide the client_id, tenant_id, and client_secret
+    # client_id = ""
+    # tenant_id = ""
+    # client_secret = ""
+    # credential = ClientSecretCredential(tenant_id, client_id, client_secret)
+    
+# if using managed identity, use the DefaultAzureCredential
     credential = DefaultAzureCredential()
 
     scope = "https://management.azure.com/.default"
