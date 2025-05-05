@@ -1,4 +1,4 @@
-# Comprehensive Threat Model for Azure API Management (Internal Mode) with Front Door
+# Threat Model for Azure API Management (Internal Mode) with Front Door
 
 ## Architecture Overview
 
